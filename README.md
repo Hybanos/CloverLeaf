@@ -1,3 +1,12 @@
+# Compil
+
+cmake -B build -DMODEL=omp
+cmake --build build
+
+maqao OV -R1 -xp=ov1 --replace -- ./build/omp_cloverleaf
+<browser> ./ov1/RESULTS/omp-cloverleaf_one_html/index.html
+
+
 CloverLeaf
 ====
 
