@@ -47,25 +47,35 @@ void viscosity_kernel(int x_min, int x_max, int y_min, int y_max, clover::Buffer
       double pgrady2 = pgrady * pgrady;
       double limiter = ((0.5 * (ugrad) / celldx[i]) * pgradx2 + (0.5 * (vgrad) / celldy[j]) * pgrady2 + strain2 * pgradx * pgrady) /
                        std::fmax(pgradx2 + pgrady2, g_small);
-      if ((limiter > 0.0) || (div >= 0.0)) {
-        viscosity(i, j) = 0.0;
-      } else {
-        double dirx = 1.0;
-        if (pgradx < 0.0) dirx = -1.0;
-        pgradx = dirx * std::fmax(g_small, std::fabs(pgradx));
-        double diry = 1.0;
-        if (pgradx < 0.0) diry = -1.0;
-        pgrady = diry * std::fmax(g_small, std::fabs(pgrady));
+      /** Virer le if   */              
+      //if ((limiter > 0.0) || (div >= 0.0)) {
+        //viscosity(i, j) = 0.0;
+    //  } else {
+        // On crée une variable qui peut prendre prendre 0.0 et 1.0 et le multiplier directement par viscosity
+        double active = ((limiter <= 0.0) && (div < 0.0)) ? 1.0 : 0.0;
+
+        /*Là également on peut virer les ifs, car si on regade bien, multiplier par dirx et diry revient juste
+        à multiplier par le signe de pgradx ou pgrady */
+        //double dirx = 1.0;
+       // if (pgradx < 0.0) dirx = -1.0;
+       // pgradx = dirx * std::fmax(g_small, std::fabs(pgradx));
+        pgradx = std::copysign(std::fmax(g_small, std::fabs(pgradx)), pgradx);
+
+      //  double diry = 1.0;
+       // if (pgradx < 0.0) diry = -1.0;
+        //pgrady = diry * std::fmax(g_small, std::fabs(pgrady));
+        pgrady = std::copysign(std::fmax(g_small, std::fabs(pgrady)), pgrady);
+
         double pgrad = std::sqrt(pgradx * pgradx + pgrady * pgrady);
         double xgrad = std::fabs(celldx[i] * pgrad / pgradx);
         double ygrad = std::fabs(celldy[j] * pgrad / pgrady);
         double grad = std::fmin(xgrad, ygrad);
         double grad2 = grad * grad;
-        viscosity(i, j) = 2.0 * density0(i, j) * grad2 * limiter * limiter;
+        viscosity(i, j) = active * 2.0 * density0(i, j) * grad2 * limiter * limiter;
       }
     }
   }
-}
+//}
 
 //  @brief Driver for the viscosity kernels
 //  @author Wayne Gaudin
