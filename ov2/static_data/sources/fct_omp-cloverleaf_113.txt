@@ -1,0 +1,11 @@
+/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp: 146 - 149
+--------------------------------------------------------------------------------
+
+146: #pragma omp parallel for simd collapse(2)
+147:     for (int j = (y_min + 1); j < (y_max + 1 + 2); j++) {
+148:       for (int i = (x_min + 1); i < (x_max + 1 + 2); i++) {
+149:         vel1(i, j) = (vel1(i, j) * node_mass_pre(i, j) + mom_flux(i - 1, j + 0) - mom_flux(i, j)) / node_mass_post(i, j);
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 69 - 69
+--------------------------------------------------------------------------------
+
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }

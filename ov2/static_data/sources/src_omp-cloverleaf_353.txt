@@ -1,0 +1,16 @@
+/home/penda/aoc/CloverLeaf/src/omp/PdV.cpp: 51 - 63
+--------------------------------------------------------------------------------
+
+51:         double left_flux = (xarea(i, j) * (xvel0(i, j) + xvel0(i + 0, j + 1) + xvel0(i, j) + xvel0(i + 0, j + 1))) * 0.25 * dt * 0.5;
+52:         double right_flux =
+53:             (xarea(i + 1, j + 0) * (xvel0(i + 1, j + 0) + xvel0(i + 1, j + 1) + xvel0(i + 1, j + 0) + xvel0(i + 1, j + 1))) * 0.25 * dt *
+54:             0.5;
+55:         double bottom_flux = (yarea(i, j) * (yvel0(i, j) + yvel0(i + 1, j + 0) + yvel0(i, j) + yvel0(i + 1, j + 0))) * 0.25 * dt * 0.5;
+56:         double top_flux = (yarea(i + 0, j + 1) * (yvel0(i + 0, j + 1) + yvel0(i + 1, j + 1) + yvel0(i + 0, j + 1) + yvel0(i + 1, j + 1))) *
+57:                           0.25 * dt * 0.5;
+58:         double total_flux = right_flux - left_flux + top_flux - bottom_flux;
+59:         double volume_change_s = volume(i, j) / (volume(i, j) + total_flux);
+60:         double recip_volume = 1.0 / volume(i, j);
+61:         double energy_change = (pressure(i, j) / density0(i, j) + viscosity(i, j) / density0(i, j)) * total_flux * recip_volume;
+62:         energy1(i, j) = energy0(i, j) - energy_change;
+63:         density1(i, j) = density0(i, j) * volume_change_s;

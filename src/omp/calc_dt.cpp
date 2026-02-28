@@ -47,32 +47,47 @@ void calc_dt_kernel(int x_min, int x_max, int y_min, int y_max, double dtmin, do
   // https://forums.developer.nvidia.com/t/nvc-f-0000-internal-compiler-error-unhandled-size-for-preparing-max-constant/221740
   double dt_min_val0 = dt_min_val;
 #pragma omp parallel for simd collapse(2) reduction(min : dt_min_val0)
-  for (int j = (y_min + 1); j < (y_max + 2); j++) {
+for (int j = (y_min + 1); j < (y_max + 2); j++) {
     for (int i = (x_min + 1); i < (x_max + 2); i++) {
+      //Précharger les données pour eviter beaucoup d'appels de fonction
+      double vol = volume(i,j);
+      double ss = soundspeed(i,j);
+      double dens = density0(i,j);
+
       double dsx = celldx[i];
       double dsy = celldy[j];
-      double cc = soundspeed(i, j) * soundspeed(i, j);
-      cc = cc + 2.0 * viscosity_a(i, j) / density0(i, j);
-      cc = std::fmax(std::sqrt(cc), g_small);
-      double dtct = dtc_safe * std::fmin(dsx, dsy) / cc;
+      double cc = ss * ss;
+      cc = cc + 2.0 * viscosity_a(i, j) / dens;
+      cc = fmax(sqrt(cc), g_small);
+      double dtct = dtc_safe * fmin(dsx, dsy) / cc;
       double div = 0.0;
       double dv1 = (xvel0(i, j) + xvel0(i + 0, j + 1)) * xarea(i, j);
       double dv2 = (xvel0(i + 1, j + 0) + xvel0(i + 1, j + 1)) * xarea(i + 1, j + 0);
       div = div + dv2 - dv1;
-      double dtut = dtu_safe * 2.0 * volume(i, j) / std::fmax(std::fmax(std::fabs(dv1), std::fabs(dv2)), g_small * volume(i, j));
+      double dtut = dtu_safe * 2.0 * vol / fmax(fmax(fabs(dv1), fabs(dv2)), g_small * vol);
+      // La vectorisation est limitée par les dépendances inter itération
       dv1 = (yvel0(i, j) + yvel0(i + 1, j + 0)) * yarea(i, j);
       dv2 = (yvel0(i + 0, j + 1) + yvel0(i + 1, j + 1)) * yarea(i + 0, j + 1);
       div = div + dv2 - dv1;
-      double dtvt = dtv_safe * 2.0 * volume(i, j) / std::fmax(std::fmax(std::fabs(dv1), std::fabs(dv2)), g_small * volume(i, j));
-      div = div / (2.0 * volume(i, j));
+      double dtvt = dtv_safe * 2.0 * vol / fmax(fmax(fabs(dv1), fabs(dv2)), g_small * vol);
+      div = div / (2.0 * vol);
       double dtdivt;
+      // j'ai tenté de virer le if mais vu qu'à l'intérieur y'a une division neaucoup plus goumand, ça a augmenté mon temps de calcul
       if (div < -g_small) {
         dtdivt = dtdiv_safe * (-1.0 / div);
       } else {
         dtdivt = g_big;
       }
-      double mins = std::fmin(dtct, std::fmin(dtut, std::fmin(dtvt, std::fmin(dtdivt, g_big))));
-      dt_min_val0 = std::fmin(mins, dt_min_val0);
+     // double inv_div = -1.0 / div;
+      //double dtdiv_candidate = dtdiv_safe * inv_div;
+     // dtdivt = (div < -g_small) ? dtdiv_candidate : g_big;
+      // Un enfer les min imbriqué, remplacer par des expressions ternaires
+      //double mins = fmin(dtct, fmin(dtut, fmin(dtvt, fmin(dtdivt, g_big))));
+      double mins = dtct;
+      mins = mins < dtut ? mins : dtut;
+      mins = mins < dtvt ? mins : dtvt;
+      mins = mins < dtdivt ? mins : dtdivt;
+      dt_min_val0 = fmin(mins, dt_min_val0);
     }
   }
   dt_min_val = dt_min_val0;

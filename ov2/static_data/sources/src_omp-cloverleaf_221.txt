@@ -1,0 +1,5 @@
+/home/penda/aoc/CloverLeaf/src/omp/advec_cell.cpp: 57 - 58
+--------------------------------------------------------------------------------
+
+57:           pre_vol(i, j) = volume(i, j) + vol_flux_x(i + 1, j + 0) - vol_flux_x(i, j);
+58:           post_vol(i, j) = volume(i, j);

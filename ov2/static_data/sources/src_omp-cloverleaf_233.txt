@@ -1,0 +1,46 @@
+/usr/include/c++/13/bits/stl_algobase.h: 238 - 238
+--------------------------------------------------------------------------------
+
+238:       if (__b < __a)
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 69 - 69
+--------------------------------------------------------------------------------
+
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }
+/home/penda/aoc/CloverLeaf/src/omp/advec_cell.cpp: 71 - 110
+--------------------------------------------------------------------------------
+
+71:           if (vol_flux_x(i, j) > 0.0) {
+72:             upwind = i - 2;
+[...]
+79:             downwind = i - 1;
+80:             dif = upwind;
+81:           }
+82:           sigmat = std::fabs(vol_flux_x(i, j)) / pre_vol(donor, j);
+83:           sigma3 = (1.0 + sigmat) * (vertexdx[i] / vertexdx[dif]);
+84:           sigma4 = 2.0 - sigmat;
+85:           sigmav = sigmat;
+86:           diffuw = density1(donor, j) - density1(upwind, j);
+87:           diffdw = density1(downwind, j) - density1(donor, j);
+88:           wind = 1.0;
+89:           if (diffdw <= 0.0) wind = -1.0;
+90:           if (diffuw * diffdw > 0.0) {
+91:             limiter = (1.0 - sigmav) * wind *
+92:                       std::fmin(std::fmin(std::fabs(diffuw), std::fabs(diffdw)),
+93:                                 one_by_six * (sigma3 * std::fabs(diffuw) + sigma4 * std::fabs(diffdw)));
+94:           } else {
+95:             limiter = 0.0;
+96:           }
+97:           mass_flux_x(i, j) = vol_flux_x(i, j) * (density1(donor, j) + limiter);
+98:           sigmam = std::fabs(mass_flux_x(i, j)) / (density1(donor, j) * pre_vol(donor, j));
+99:           diffuw = energy1(donor, j) - energy1(upwind, j);
+100:           diffdw = energy1(downwind, j) - energy1(donor, j);
+101:           wind = 1.0;
+102:           if (diffdw <= 0.0) wind = -1.0;
+103:           if (diffuw * diffdw > 0.0) {
+104:             limiter = (1.0 - sigmam) * wind *
+105:                       std::fmin(std::fmin(std::fabs(diffuw), std::fabs(diffdw)),
+106:                                 one_by_six * (sigma3 * std::fabs(diffuw) + sigma4 * std::fabs(diffdw)));
+107:           } else {
+108:             limiter = 0.0;
+109:           }
+110:           ener_flux(i, j) = mass_flux_x(i, j) * (energy1(donor, j) + limiter);

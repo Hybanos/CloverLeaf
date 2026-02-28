@@ -1,0 +1,9 @@
+/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp: 40 - 45
+--------------------------------------------------------------------------------
+
+40:       double v = 1.0 / density(i, j);
+41:       pressure(i, j) = (1.4 - 1.0) * density(i, j) * energy(i, j);
+42:       double pressurebyenergy = (1.4 - 1.0) * density(i, j);
+43:       double pressurebyvolume = -density(i, j) * pressure(i, j);
+44:       double sound_speed_squared = v * v * (pressure(i, j) * pressurebyenergy - pressurebyvolume);
+45:       soundspeed(i, j) = std::sqrt(sound_speed_squared);

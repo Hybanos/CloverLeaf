@@ -1,0 +1,52 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_361":
+            {
+              "_362":
+                {
+                  "src_regions":
+                    [
+                      {
+                        "path": "/home/penda/aoc/CloverLeaf/src/omp/reset_field.cpp",
+                        "regions":
+                          [
+                            [
+                            37,
+                            38
+                            ]
+                          ]
+                      }
+                    ],
+                  "src": "reset_field.cpp:37-38"
+                },
+              "src_regions":
+                [
+                  {
+                    "path": "/home/penda/aoc/CloverLeaf/src/omp/reset_field.cpp",
+                    "regions":
+                      [
+                        [
+                        36,
+                        38
+                        ]
+                      ]
+                  },
+                  {
+                    "path": "/home/penda/aoc/CloverLeaf/src/omp/context.h",
+                    "regions":
+                      [
+                        [
+                        69,
+                        69
+                        ]
+                      ]
+                  }
+                ],
+              "src": "reset_field.cpp:36-38"
+            }
+        }
+    }
+}

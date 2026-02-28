@@ -1,0 +1,17 @@
+/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp: 91 - 98
+--------------------------------------------------------------------------------
+
+91:           if (field.vertexx[i + 1] >= state_xmin[state] && field.vertexx[i] < state_xmax[state]) {
+92:             if (field.vertexy[j + 1] >= state_ymin[state] && field.vertexy[j] < state_ymax[state]) {
+93:               field.energy0(i, j) = state_energy[state];
+94:               field.density0(i, j) = state_density[state];
+95:               for (int kt = j; kt <= j + 1; ++kt) {
+96:                 for (int jt = i; jt <= i + 1; ++jt) {
+97:                   field.xvel0(jt, kt) = state_xvel[state];
+98:                   field.yvel0(jt, kt) = state_yvel[state];
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 46 - 69
+--------------------------------------------------------------------------------
+
+46:   T &operator[](size_t i) const { return data[i]; }
+[...]
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }

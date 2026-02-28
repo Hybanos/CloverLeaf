@@ -1,0 +1,88 @@
+---
+Devices:
+ 0: Host CPU
+CloverLeaf:
+ - Ver.:     2.000
+ - Deck:     clover.in
+ - Out:      clover.out
+ - Profiler: deck-specified
+MPI:
+ - Enabled:     false
+ - Total ranks: 1
+ - Header device-awareness (CUDA-awareness):  unknown
+ - Runtime device-awareness (CUDA-awareness): unknown
+ - Host-Device halo exchange staging buffer:  true
+Model:
+ - Name:      OpenMP (CPU)
+ - Execution: Host
+# ---- 
+Output: |+1
+ Output file clover.out opened. All output will go there.
+ Using input: `clover.in`
+ Problem initialised and generated
+ Launching hydro
+ Step 1 time 0 control sound timestep  0.000770323 1,1 x 0 y 0
+ Wall clock 3.59677
+ Average time per cell 1.21961e-07
+  Step time per cell    1.21961e-07
+ Step 2 time 0.000770323 control sound timestep  0.000648901 1,1 x 0 y 0
+ Wall clock 7.09569
+ Average time per cell 1.20302e-07
+  Step time per cell    1.18297e-07
+ Step 3 time 0.00141922 control sound timestep  0.000592021 1,1 x 0 y 0
+ Wall clock 11.0402
+ Average time per cell 1.24785e-07
+  Step time per cell    1.33748e-07
+ Step 4 time 0.00201124 control sound timestep  0.000617822 1,1 x 0 y 0
+ Wall clock 14.7269
+ Average time per cell 1.24842e-07
+  Step time per cell    1.25008e-07
+ Step 5 time 0.00262907 control sound timestep  0.000670118 1,1 x 0 y 0
+ Wall clock 18.5574
+ Average time per cell 1.25851e-07
+  Step time per cell    1.29838e-07
+ Step 6 time 0.00329918 control sound timestep  0.000697003 1,1 x 0 y 0
+ Wall clock 21.8478
+ Average time per cell 1.23471e-07
+  Step time per cell    1.11501e-07
+ Step 7 time 0.00399619 control sound timestep  0.000708315 1,1 x 0 y 0
+ Wall clock 25.2257
+ Average time per cell 1.22195e-07
+  Step time per cell    1.14394e-07
+ Step 8 time 0.0047045 control sound timestep  0.000732659 1,1 x 0 y 0
+ Wall clock 28.5306
+ Average time per cell 1.20928e-07
+  Step time per cell    1.1204e-07
+ Step 9 time 0.00543716 control sound timestep  0.000728099 1,1 x 0 y 0
+ Wall clock 32.3586
+ Average time per cell 1.21914e-07
+  Step time per cell    1.29797e-07
+ Step 10 time 0.00616526 control sound timestep  0.000728266 1,1 x 0 y 0
+ Wall clock 36.9447
+ First step overhead 0
+Result:
+ - Problem: none
+ - Outcome: PASSED
+
+* [MAQAO] Info: Dumping samples (host penda-Latitude-7480, process 54935)
+* [MAQAO] Info: Dumping source info for callchain nodes (host penda-Latitude-7480, process 54935)
+* [MAQAO] Info: Building/writing metadata (host penda-Latitude-7480)
+* [MAQAO] Info: Finished collect step (host penda-Latitude-7480, process 54935)
+
+
+Your experiment path is /home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0
+
+To display your profiling results:
+############################################################################################################
+#    LEVEL    |     REPORT     |                                  COMMAND                                  #
+############################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0  #
+############################################################################################################
+

@@ -1,0 +1,55 @@
+/usr/include/c++/13/bits/stl_algobase.h: 238 - 238
+--------------------------------------------------------------------------------
+
+238:       if (__b < __a)
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 46 - 69
+--------------------------------------------------------------------------------
+
+46:   T &operator[](size_t i) const { return data[i]; }
+[...]
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }
+/home/penda/aoc/CloverLeaf/src/omp/advec_cell.cpp: 157 - 202
+--------------------------------------------------------------------------------
+
+157: #pragma omp parallel for simd collapse(2)
+158:     for (int j = (y_min + 1); j < (y_max + 2 + 2); j++) {
+159:       for (int i = (x_min + 1); i < (x_max + 2); i++)
+160:         ({
+161:           int upwind, donor, downwind, dif;
+162:           double sigmat, sigma3, sigma4, sigmav, sigmam, diffuw, diffdw, limiter, wind;
+163:           if (vol_flux_y(i, j) > 0.0) {
+[...]
+169:             upwind = std::min(j + 1, y_max + 2);
+170:             donor = j;
+171:             downwind = j - 1;
+172:             dif = upwind;
+173:           }
+174:           sigmat = std::fabs(vol_flux_y(i, j)) / pre_vol(i, donor);
+175:           sigma3 = (1.0 + sigmat) * (vertexdy[j] / vertexdy[dif]);
+176:           sigma4 = 2.0 - sigmat;
+177:           sigmav = sigmat;
+178:           diffuw = density1(i, donor) - density1(i, upwind);
+179:           diffdw = density1(i, downwind) - density1(i, donor);
+180:           wind = 1.0;
+181:           if (diffdw <= 0.0) wind = -1.0;
+182:           if (diffuw * diffdw > 0.0) {
+183:             limiter = (1.0 - sigmav) * wind *
+184:                       std::fmin(std::fmin(std::fabs(diffuw), std::fabs(diffdw)),
+185:                                 one_by_six * (sigma3 * std::fabs(diffuw) + sigma4 * std::fabs(diffdw)));
+186:           } else {
+187:             limiter = 0.0;
+188:           }
+189:           mass_flux_y(i, j) = vol_flux_y(i, j) * (density1(i, donor) + limiter);
+190:           sigmam = std::fabs(mass_flux_y(i, j)) / (density1(i, donor) * pre_vol(i, donor));
+191:           diffuw = energy1(i, donor) - energy1(i, upwind);
+192:           diffdw = energy1(i, downwind) - energy1(i, donor);
+193:           wind = 1.0;
+194:           if (diffdw <= 0.0) wind = -1.0;
+195:           if (diffuw * diffdw > 0.0) {
+196:             limiter = (1.0 - sigmam) * wind *
+197:                       std::fmin(std::fmin(std::fabs(diffuw), std::fabs(diffdw)),
+198:                                 one_by_six * (sigma3 * std::fabs(diffuw) + sigma4 * std::fabs(diffdw)));
+199:           } else {
+200:             limiter = 0.0;
+201:           }
+202:           ener_flux(i, j) = mass_flux_y(i, j) * (energy1(i, donor) + limiter);

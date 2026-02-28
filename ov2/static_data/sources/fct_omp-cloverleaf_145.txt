@@ -1,0 +1,16 @@
+/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp: 74 - 80
+--------------------------------------------------------------------------------
+
+74: #pragma omp parallel for simd collapse(2)
+75:   for (int j = (0); j < (yrange); j++) {
+76:     for (int i = (0); i < (xrange); i++) {
+77:       field.energy0(i, j) = state_energy[0];
+78:       field.density0(i, j) = state_density[0];
+79:       field.xvel0(i, j) = state_xvel[0];
+80:       field.yvel0(i, j) = state_yvel[0];
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 46 - 69
+--------------------------------------------------------------------------------
+
+46:   T &operator[](size_t i) const { return data[i]; }
+[...]
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }

@@ -1,0 +1,6 @@
+/home/penda/aoc/CloverLeaf/src/omp/initialise_chunk.cpp: 80 - 82
+--------------------------------------------------------------------------------
+
+80:       field.volume(i, j) = dx * dy;
+81:       field.xarea(i, j) = field.celldy[j];
+82:       field.yarea(i, j) = field.celldx[i];

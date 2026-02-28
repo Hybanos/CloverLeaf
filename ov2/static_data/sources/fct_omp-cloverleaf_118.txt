@@ -1,0 +1,41 @@
+/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp: 180 - 211
+--------------------------------------------------------------------------------
+
+180: #pragma omp parallel for simd collapse(2)
+181:     for (int j = (y_min - 1 + 1); j < (y_max + 1 + 2); j++) {
+182:       for (int i = (x_min + 1); i < (x_max + 1 + 2); i++)
+183:         ({
+184:           int upwind, donor, downwind, dif;
+185:           double sigma, width, limiter, vdiffuw, vdiffdw, auw, adw, wind, advec_vel_s;
+186:           if (node_flux(i, j) < 0.0) {
+187:             upwind = j + 2;
+188:             donor = j + 1;
+189:             downwind = j;
+190:             dif = donor;
+191:           } else {
+192:             upwind = j - 1;
+193:             donor = j;
+194:             downwind = j + 1;
+195:             dif = upwind;
+196:           }
+197:           sigma = std::fabs(node_flux(i, j)) / (node_mass_pre(i, donor));
+198:           width = celldy[j];
+199:           vdiffuw = vel1(i, donor) - vel1(i, upwind);
+200:           vdiffdw = vel1(i, downwind) - vel1(i, donor);
+201:           limiter = 0.0;
+202:           if (vdiffuw * vdiffdw > 0.0) {
+203:             auw = std::fabs(vdiffuw);
+204:             adw = std::fabs(vdiffdw);
+205:             wind = 1.0;
+206:             if (vdiffdw <= 0.0) wind = -1.0;
+207:             limiter =
+208:                 wind * std::fmin(std::fmin(width * ((2.0 - sigma) * adw / width + (1.0 + sigma) * auw / celldy[dif]) / 6.0, auw), adw);
+209:           }
+210:           advec_vel_s = vel1(i, donor) + (1.0 - sigma) * limiter;
+211:           mom_flux(i, j) = advec_vel_s * node_flux(i, j);
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 46 - 69
+--------------------------------------------------------------------------------
+
+46:   T &operator[](size_t i) const { return data[i]; }
+[...]
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }

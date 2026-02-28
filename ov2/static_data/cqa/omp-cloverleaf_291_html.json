@@ -1,0 +1,464 @@
+{
+  "_cqa_text_report":
+    {
+      "_objects":
+        {
+          "image_col_maj":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/col_maj.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_4x32_256":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/4x32_256.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_1x64_128":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/1x64_128.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_4x32_512":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/4x32_512.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_8x32_512":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/8x32_512.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_1x32_256":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/1x32_256.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_2x64_512":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/2x64_512.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "tt_insn_vec":
+            {
+              "type": "tooltip",
+              "help": "Portion of vector registers that is actually used. Available only for instructions belonging to a SIMD/vector instructions set (like x86 AVX)",
+              "text": "Vectorization"
+            },
+          "image_1x64_256":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/1x64_256.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "tt_Recip_throughput":
+            {
+              "type": "tooltip",
+              "help": "Average number of cycles to retire that instruction if repeated (assuming independent instructions, with no read-after-write dependency)",
+              "text": "Recip. throughput"
+            },
+          "tt_Nb_FU":
+            {
+              "type": "tooltip",
+              "help": "Number of Fused (Front-end) uops",
+              "text": "Nb FU"
+            },
+          "image_vec_align":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/vec_align.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_1x64_512":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/1x64_512.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_1x32_128":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/1x32_128.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "list_path_1_complex_1":
+            {
+              "dynamic": true,
+              "initial": "closed",
+              "type": "list",
+              "lines":
+                [
+                "/home/penda/aoc/CloverLeaf/src/omp/context.h:69"
+                ],
+              "header": ""
+            },
+          "image_2x64_256":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/2x64_256.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "image_row_maj":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/row_maj.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "list_path_1_cvt_1":
+            {
+              "dynamic": true,
+              "initial": "closed",
+              "type": "list",
+              "lines":
+                [
+                "/home/penda/aoc/CloverLeaf/src/omp/context.h:69"
+                ],
+              "header": ""
+            },
+          "image_1x32_512":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/1x32_512.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            },
+          "list_path_1_cvt_2":
+            {
+              "dynamic": true,
+              "initial": "closed",
+              "type": "list",
+              "lines":
+                [
+                "/home/penda/aoc/CloverLeaf/src/omp/field_summary.cpp:82"
+                ],
+              "header": ""
+            },
+          "image_4x64_512":
+            {
+              "type": "image",
+              "format": "url",
+              "data": "../images/cqa/4x64_512.svg",
+              "size":
+                {
+                  "x": 500
+                }
+            }
+        },
+      "AVG":
+        {
+          "hint":
+            [
+              {
+                "details": "These instructions generate more than one micro-operation and only one of them can be decoded during a cycle and the extra micro-operations increase pressure on execution units.\n<ul><li>IDIV: 1 occurrences<<list_path_1_complex_1>></li></ul>",
+                "title": "Complex instructions",
+                "txt": "Detected COMPLEX INSTRUCTIONS.\n"
+              },
+              {
+                "workaround": "<ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li><li>Try to remove indirect accesses. If applicable, precompute elements out of the innermost loop.</li></ul>",
+                "details": "<ul><li>Constant unknown stride: 2 occurrence(s)</li><li>Irregular (variable stride) or indirect: 4 occurrence(s)</li></ul>Non-unit stride (uncontiguous) accesses are not efficiently using data caches\n",
+                "title": "Slow data structures access",
+                "txt": "Detected data structures (typically arrays) that cannot be efficiently read/written"
+              },
+              {
+                "workaround": "Avoid mixing data with different types. In particular, check if the type of constants is the same as array elements.",
+                "details": "<ul><li>CLTD: 1 occurrences<<list_path_1_cvt_1>></li><li>CLTQ: 1 occurrences<<list_path_1_cvt_2>></li></ul>",
+                "title": "Conversion instructions",
+                "txt": "Detected expensive conversion instructions."
+              },
+              {
+                "title": "Type of elements and instruction set",
+                "txt": "18 SSE or AVX instructions are processing arithmetic or math operations on double precision FP elements in scalar mode (one at a time).\n"
+              },
+              {
+                "title": "Matching between your loop (in the source code) and the binary loop",
+                "txt": "The binary loop is composed of 25 FP arithmetical operations:\n<ul><li>12: addition or subtraction (7 inside FMA instructions)</li><li>13: multiply (7 inside FMA instructions)</li></ul>The binary loop is loading 160 bytes (20 double precision FP elements)."
+              },
+              {
+                "title": "Arithmetic intensity",
+                "txt": "Arithmetic intensity is 0.16 FP operations per loaded or stored byte."
+              },
+              {
+                "workaround": "Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam. Or with the unroll (resp. unroll_and_jam) directive on top of the inner (resp. surrounding) loop. You can enforce an unroll factor: #pragma GCC unroll N",
+                "title": "Unroll opportunity",
+                "txt": "Loop is potentially data access bound."
+              }
+            ],
+          "expert":
+            [
+              {
+                "title": "General properties",
+                "txt": "<table><tr><td>nb instructions</td><td>73</td></tr><tr><td>nb uops</td><td>82</td></tr><tr><td>loop length</td><td>305</td></tr><tr><td>used x86 registers</td><td>15</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>16</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>10</td></tr><tr><td>ADD-SUB / MUL ratio</td><td>0.83</td></tr></table>"
+              },
+              {
+                "help": "Front-end corresponds to instructions fetching and decoding into macro/micro operations",
+                "title": "Front-end",
+                "txt": "ASSUMED MACRO FUSION\nFIT IN UOP CACHE\n<table><tr><td>micro-operation queue</td><td>21.25 cycles</td></tr><tr><td>front end</td><td>21.25 cycles</td></tr></table>"
+              },
+              {
+                "help": "Back-end corresponds to macro/micro operations execution (includes allocating registers, fetching operands etc.)",
+                "title": "Back-end",
+                "txt": "<table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>14.75</td><td>14.75</td><td>11.00</td><td>11.00</td><td>0.00</td><td>14.75</td><td>14.75</td><td>0.00</td></tr><tr><td>cycles</td><td>14.75</td><td>14.75</td><td>11.00</td><td>11.00</td><td>0.00</td><td>14.75</td><td>14.75</td><td>0.00</td></tr></table>\nExecution ports to units layout:\n<ul><li>P0 (256 bits): VPU, BRU, ALU, DIV/SQRT</li><li>P1 (256 bits): ALU, VPU</li><li>P2 (256 bits): store address, load</li><li>P3 (256 bits): store address, load</li><li>P4 (256 bits): store data</li><li>P5: ALU</li><li>P6: ALU, BRU</li><li>P7: store address</li></ul>\n<table><tr><td>Cycles executing div or sqrt instructions</td><td>6.00</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>4.00</td></tr></table>"
+              },
+              {
+                "title": "Cycles summary",
+                "txt": "<table><tr><td>Front-end</td><td>21.25</td></tr><tr><td>Dispatch</td><td>14.75</td></tr><tr><td>DIV/SQRT</td><td>6.00</td></tr><tr><td>Data deps.</td><td>4.00</td></tr><tr><td>Overall L1</td><td>21.25</td></tr></table>"
+              },
+              {
+                "help": "Proportion of vectorizable instructions that are actually vectorized. Higher is better.",
+                "title": "Vectorization ratios",
+                "txt": "INT\n<table><tr><td>all</td><td>0%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>0%</td></tr></table>FP\n<table><tr><td>all</td><td>0%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>0%</td></tr><tr><td>add-sub</td><td>0%</td></tr><tr><td>fma</td><td>0%</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>INT+FP\n<table><tr><td>all</td><td>0%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>0%</td></tr><tr><td>add-sub</td><td>0%</td></tr><tr><td>fma</td><td>0%</td></tr><tr><td>div/sqrt</td><td>0%</td></tr><tr><td>other</td><td>0%</td></tr></table>"
+              },
+              {
+                "help": "Effective/average relative length/width used in vector/SIMD registers. Higher is better.",
+                "title": "Vector efficiency ratios",
+                "txt": "INT\n<table><tr><td>all</td><td>16%</td></tr><tr><td>load</td><td>12%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>16%</td></tr></table>FP\n<table><tr><td>all</td><td>25%</td></tr><tr><td>load</td><td>25%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>25%</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>INT+FP\n<table><tr><td>all</td><td>24%</td></tr><tr><td>load</td><td>24%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>25%</td></tr><tr><td>div/sqrt</td><td>12%</td></tr><tr><td>other</td><td>18%</td></tr></table>"
+              },
+              {
+                "help": "Compare the CQA-computed load/store/compute metrics with the capacity of the core. For instance if CQA computes 24 bytes in the loop in 2 cycles (that is 12 cycles per cycle) and if the core can process up to 16 bytes per cycle, that metric is 75%.",
+                "title": "Cycles and memory resources usage",
+                "txt": "Assuming all data fit into the L1 cache, each iteration of the binary loop takes 21.25 cycles. At this rate:\n<ul><li>11% of peak load performance is reached (7.53 out of 64.00 bytes loaded per cycle (GB/s @ 1GHz))</li></ul>"
+              },
+              {
+                "title": "Front-end bottlenecks",
+                "txt": "Performance is limited by instruction throughput (loading/decoding program instructions to execution core) (front-end is a bottleneck).\n\nBy removing all these bottlenecks, you can lower the cost of an iteration from 21.25 to 14.75 cycles (1.44x speedup).\n"
+              },
+              {
+                "title": "ASM code",
+                "txt": "In the binary file, the address of the loop is: 3e6f0\n\n<table><tr><th>Instruction</th><th><<tt_Nb_FU>></th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th><<tt_Recip_throughput>></th><th><<tt_insn_vec>></th></tr><tr><td>MOV %R8D,%EAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>MOV 0x40(%RSP),%ESI</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>MOV 0x44(%RSP),%EDI</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>MOV %R11,%R14</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>CLTD</td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>1</td><td>0.50</td><td>scal (12.5%)</td></tr><tr><td>INC %R8D</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>IDIVL 0x60(%RSP)</td><td>11</td><td>2.50</td><td>2.50</td><td>0.50</td><td>0.50</td><td>0</td><td>2.50</td><td>2.50</td><td>0</td><td>26</td><td>6</td><td>scal (12.5%)</td></tr><tr><td>ADD %ESI,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>ADD %EDI,%EDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>MOV %R12,%RDI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>MOVSXD %EAX,%RCX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>MOVSXD %EDX,%RSI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>INC %EDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>INC %EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>IMUL %RCX,%R14</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>MOVSXD %EDX,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>CLTQ</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%RDI</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>LEA (%RSI,%R14,1),%R15</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RDX,%R14</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%R9,%R15,8),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>LEA (%RSI,%RDI,1),%R15</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RDX,%RDI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%R9,%R14,8),%XMM9</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R10,%R15,8),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R10,%RDI,8),%XMM11</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV %R11,%RDI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>IMUL %RAX,%RDI</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>VMULSD %XMM1,%XMM1,%XMM8</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %R12,%RAX</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>VMULSD %XMM11,%XMM11,%XMM12</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>LEA (%RSI,%RDI,1),%R14</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RDX,%RDI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>LEA (%RSI,%RAX,1),%R15</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RAX,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%R9,%R14,8),%XMM14</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV 0x38(%RSP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VMOVSD (%R10,%R15,8),%XMM15</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R10,%RDX,8),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV %R13,%R15</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>VFMADD132SD %XMM0,%XMM8,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%RAX</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>MOV 0x48(%RSP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>MOV 0x30(%RSP),%R14</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VFMADD132SD %XMM9,%XMM12,%XMM9</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%R15</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>VMULSD %XMM15,%XMM15,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMULSD %XMM1,%XMM1,%XMM8</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>ADD %RSI,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%RDX,%RAX,8),%XMM12</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV 0x20(%RSP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RSI,%R15</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>MOV 0x50(%RSP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VADDSD %XMM9,%XMM0,%XMM13</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R9,%RDI,8),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV 0x28(%RSP),%RDI</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VADDSD %XMM12,%XMM6,%XMM6</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD %XMM14,%XMM14,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD132SD %XMM0,%XMM8,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%RDI</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>IMUL %RDX,%RCX</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>ADD %RSI,%RDI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>ADD %RSI,%RCX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VADDSD %XMM2,%XMM0,%XMM9</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD (%RBX,%RCX,8),%XMM12,%XMM4</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VADDSD %XMM13,%XMM9,%XMM11</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMULSD (%R14,%RDI,8),%XMM12,%XMM13</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMULSD %XMM7,%XMM13,%XMM14</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD (%RAX,%R15,8),%XMM13,%XMM5</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VADDSD %XMM13,%XMM10,%XMM10</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD %XMM11,%XMM14,%XMM3</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>CMP %R8D,0x58(%RSP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>JNE 3e6f0 &lt;_Z13field_summaryR16global_variablesR9parallel_._omp_fn.0+0x110&gt;</td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td><td>N/A</td></tr></table>"
+              }
+            ],
+          "header":
+            [
+            "7% of peak computational performance is used (1.18 out of 16.00 FLOP per cycle (GFLOPS @ 1GHz))"
+            ],
+          "brief":
+            [
+
+            ],
+          "gain":
+            [
+              {
+                "workaround": "<ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li></ul>",
+                "title": "Code clean check",
+                "txt": "Detected a slowdown caused by scalar integer instructions (typically used for address computation).\nBy removing them, you can lower the cost of an iteration from 21.25 to 9.00 cycles (2.36x speedup)."
+              },
+              {
+                "workaround": "<ul><li>Try another compiler or update/tune your current one</li><li>Remove inter-iterations dependences from your loop and make it unit-stride:\n<ul><li>If your arrays have 2 or more dimensions, check whether elements are accessed contiguously and, otherwise, try to permute loops accordingly:\nC storage order is row-major: for(i) for(j) a[j][i] = b[j][i]; (slow, non stride 1) =&gt; for(i) for(j) a[i][j] = b[i][j]; (fast, stride 1)<<image_row_maj>></li><li>If your loop streams arrays of structures (AoS), try to use structures of arrays instead (SoA):\nfor(i) a[i].x = b[i].x; (slow, non stride 1) =&gt; for(i) a.x[i] = b.x[i]; (fast, stride 1)</li></ul></li></ul>",
+                "details": "All SSE/AVX instructions are used in scalar version (process only one data element in vector registers).\nSince your execution units are vector units, only a vectorized loop can use their full power.\n",
+                "title": "Vectorization",
+                "txt": "Your loop is not vectorized.\nOnly 24% of vector register length is used (average across all SSE/AVX instructions).\nBy vectorizing your loop, you can lower the cost of an iteration from 21.25 to 3.68 cycles (5.78x speedup)."
+              },
+              {
+                "title": "Execution units bottlenecks",
+                "txt": "Found no such bottlenecks but see expert reports for more complex bottlenecks."
+              }
+            ],
+          "potential":
+            [
+              {
+                "title": "Expensive FP math instructions/calls",
+                "txt": "Detected performance impact from expensive FP math instructions/calls.\nBy removing/reexpressing them, you can lower the cost of an iteration from 21.25 to 18.75 cycles (1.13x speedup)."
+              },
+              {
+                "workaround": "Try to change order in which elements are evaluated (using parentheses) in arithmetic expressions containing both ADD/SUB and MUL operations to enable your compiler to generate FMA instructions wherever possible.\nEstimated speedup by perfect pairing: 1.06x.\nFor instance a + b*c is a valid FMA (MUL then ADD).\nHowever (a+b)* c cannot be translated into an FMA (ADD then MUL).",
+                "title": "FMA",
+                "txt": "Detected 7 FMA (fused multiply-add) operations.\nPresence of both ADD/SUB and MUL operations."
+              }
+            ]
+        },
+      "paths":
+        [
+          {
+            "hint":
+              [
+                {
+                  "details": "These instructions generate more than one micro-operation and only one of them can be decoded during a cycle and the extra micro-operations increase pressure on execution units.\n<ul><li>IDIV: 1 occurrences<<list_path_1_complex_1>></li></ul>",
+                  "title": "Complex instructions",
+                  "txt": "Detected COMPLEX INSTRUCTIONS.\n"
+                },
+                {
+                  "workaround": "<ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li><li>Try to remove indirect accesses. If applicable, precompute elements out of the innermost loop.</li></ul>",
+                  "details": "<ul><li>Constant unknown stride: 2 occurrence(s)</li><li>Irregular (variable stride) or indirect: 4 occurrence(s)</li></ul>Non-unit stride (uncontiguous) accesses are not efficiently using data caches\n",
+                  "title": "Slow data structures access",
+                  "txt": "Detected data structures (typically arrays) that cannot be efficiently read/written"
+                },
+                {
+                  "workaround": "Avoid mixing data with different types. In particular, check if the type of constants is the same as array elements.",
+                  "details": "<ul><li>CLTD: 1 occurrences<<list_path_1_cvt_1>></li><li>CLTQ: 1 occurrences<<list_path_1_cvt_2>></li></ul>",
+                  "title": "Conversion instructions",
+                  "txt": "Detected expensive conversion instructions."
+                },
+                {
+                  "title": "Type of elements and instruction set",
+                  "txt": "18 SSE or AVX instructions are processing arithmetic or math operations on double precision FP elements in scalar mode (one at a time).\n"
+                },
+                {
+                  "title": "Matching between your loop (in the source code) and the binary loop",
+                  "txt": "The binary loop is composed of 25 FP arithmetical operations:\n<ul><li>12: addition or subtraction (7 inside FMA instructions)</li><li>13: multiply (7 inside FMA instructions)</li></ul>The binary loop is loading 160 bytes (20 double precision FP elements)."
+                },
+                {
+                  "title": "Arithmetic intensity",
+                  "txt": "Arithmetic intensity is 0.16 FP operations per loaded or stored byte."
+                },
+                {
+                  "workaround": "Unroll your loop if trip count is significantly higher than target unroll factor and if some data references are common to consecutive iterations. This can be done manually. Or by recompiling with -funroll-loops and/or -floop-unroll-and-jam. Or with the unroll (resp. unroll_and_jam) directive on top of the inner (resp. surrounding) loop. You can enforce an unroll factor: #pragma GCC unroll N",
+                  "title": "Unroll opportunity",
+                  "txt": "Loop is potentially data access bound."
+                }
+              ],
+            "expert":
+              [
+                {
+                  "title": "General properties",
+                  "txt": "<table><tr><td>nb instructions</td><td>73</td></tr><tr><td>nb uops</td><td>82</td></tr><tr><td>loop length</td><td>305</td></tr><tr><td>used x86 registers</td><td>15</td></tr><tr><td>used mmx registers</td><td>0</td></tr><tr><td>used xmm registers</td><td>16</td></tr><tr><td>used ymm registers</td><td>0</td></tr><tr><td>used zmm registers</td><td>0</td></tr><tr><td>nb stack references</td><td>10</td></tr><tr><td>ADD-SUB / MUL ratio</td><td>0.83</td></tr></table>"
+                },
+                {
+                  "help": "Front-end corresponds to instructions fetching and decoding into macro/micro operations",
+                  "title": "Front-end",
+                  "txt": "ASSUMED MACRO FUSION\nFIT IN UOP CACHE\n<table><tr><td>micro-operation queue</td><td>21.25 cycles</td></tr><tr><td>front end</td><td>21.25 cycles</td></tr></table>"
+                },
+                {
+                  "help": "Back-end corresponds to macro/micro operations execution (includes allocating registers, fetching operands etc.)",
+                  "title": "Back-end",
+                  "txt": "<table><tr><th>      </th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th></tr><tr><td>uops</td><td>14.75</td><td>14.75</td><td>11.00</td><td>11.00</td><td>0.00</td><td>14.75</td><td>14.75</td><td>0.00</td></tr><tr><td>cycles</td><td>14.75</td><td>14.75</td><td>11.00</td><td>11.00</td><td>0.00</td><td>14.75</td><td>14.75</td><td>0.00</td></tr></table>\nExecution ports to units layout:\n<ul><li>P0 (256 bits): VPU, BRU, ALU, DIV/SQRT</li><li>P1 (256 bits): ALU, VPU</li><li>P2 (256 bits): store address, load</li><li>P3 (256 bits): store address, load</li><li>P4 (256 bits): store data</li><li>P5: ALU</li><li>P6: ALU, BRU</li><li>P7: store address</li></ul>\n<table><tr><td>Cycles executing div or sqrt instructions</td><td>6.00</td></tr><tr><td>Longest recurrence chain latency (RecMII)</td><td>4.00</td></tr></table>"
+                },
+                {
+                  "title": "Cycles summary",
+                  "txt": "<table><tr><td>Front-end</td><td>21.25</td></tr><tr><td>Dispatch</td><td>14.75</td></tr><tr><td>DIV/SQRT</td><td>6.00</td></tr><tr><td>Data deps.</td><td>4.00</td></tr><tr><td>Overall L1</td><td>21.25</td></tr></table>"
+                },
+                {
+                  "help": "Proportion of vectorizable instructions that are actually vectorized. Higher is better.",
+                  "title": "Vectorization ratios",
+                  "txt": "INT\n<table><tr><td>all</td><td>0%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>0%</td></tr></table>FP\n<table><tr><td>all</td><td>0%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>0%</td></tr><tr><td>add-sub</td><td>0%</td></tr><tr><td>fma</td><td>0%</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>INT+FP\n<table><tr><td>all</td><td>0%</td></tr><tr><td>load</td><td>0%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>0%</td></tr><tr><td>add-sub</td><td>0%</td></tr><tr><td>fma</td><td>0%</td></tr><tr><td>div/sqrt</td><td>0%</td></tr><tr><td>other</td><td>0%</td></tr></table>"
+                },
+                {
+                  "help": "Effective/average relative length/width used in vector/SIMD registers. Higher is better.",
+                  "title": "Vector efficiency ratios",
+                  "txt": "INT\n<table><tr><td>all</td><td>16%</td></tr><tr><td>load</td><td>12%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>NA (no mul vectorizable/vectorized instructions)</td></tr><tr><td>add-sub</td><td>NA (no add-sub vectorizable/vectorized instructions)</td></tr><tr><td>fma</td><td>NA (no fma vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>16%</td></tr></table>FP\n<table><tr><td>all</td><td>25%</td></tr><tr><td>load</td><td>25%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>25%</td></tr><tr><td>div/sqrt</td><td>NA (no div/sqrt vectorizable/vectorized instructions)</td></tr><tr><td>other</td><td>NA (no other vectorizable/vectorized instructions)</td></tr></table>INT+FP\n<table><tr><td>all</td><td>24%</td></tr><tr><td>load</td><td>24%</td></tr><tr><td>store</td><td>NA (no store vectorizable/vectorized instructions)</td></tr><tr><td>mul</td><td>25%</td></tr><tr><td>add-sub</td><td>25%</td></tr><tr><td>fma</td><td>25%</td></tr><tr><td>div/sqrt</td><td>12%</td></tr><tr><td>other</td><td>18%</td></tr></table>"
+                },
+                {
+                  "help": "Compare the CQA-computed load/store/compute metrics with the capacity of the core. For instance if CQA computes 24 bytes in the loop in 2 cycles (that is 12 cycles per cycle) and if the core can process up to 16 bytes per cycle, that metric is 75%.",
+                  "title": "Cycles and memory resources usage",
+                  "txt": "Assuming all data fit into the L1 cache, each iteration of the binary loop takes 21.25 cycles. At this rate:\n<ul><li>11% of peak load performance is reached (7.53 out of 64.00 bytes loaded per cycle (GB/s @ 1GHz))</li></ul>"
+                },
+                {
+                  "title": "Front-end bottlenecks",
+                  "txt": "Performance is limited by instruction throughput (loading/decoding program instructions to execution core) (front-end is a bottleneck).\n\nBy removing all these bottlenecks, you can lower the cost of an iteration from 21.25 to 14.75 cycles (1.44x speedup).\n"
+                },
+                {
+                  "title": "ASM code",
+                  "txt": "In the binary file, the address of the loop is: 3e6f0\n\n<table><tr><th>Instruction</th><th><<tt_Nb_FU>></th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th><th>P7</th><th>Latency</th><th><<tt_Recip_throughput>></th><th><<tt_insn_vec>></th></tr><tr><td>MOV %R8D,%EAX</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>MOV 0x40(%RSP),%ESI</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>MOV 0x44(%RSP),%EDI</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>MOV %R11,%R14</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>CLTD</td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>1</td><td>0.50</td><td>scal (12.5%)</td></tr><tr><td>INC %R8D</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>IDIVL 0x60(%RSP)</td><td>11</td><td>2.50</td><td>2.50</td><td>0.50</td><td>0.50</td><td>0</td><td>2.50</td><td>2.50</td><td>0</td><td>26</td><td>6</td><td>scal (12.5%)</td></tr><tr><td>ADD %ESI,%EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>ADD %EDI,%EDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>MOV %R12,%RDI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>MOVSXD %EAX,%RCX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>MOVSXD %EDX,%RSI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>INC %EDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>INC %EAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>IMUL %RCX,%R14</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>MOVSXD %EDX,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>CLTQ</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%RDI</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>LEA (%RSI,%R14,1),%R15</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RDX,%R14</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%R9,%R15,8),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>LEA (%RSI,%RDI,1),%R15</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RDX,%RDI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%R9,%R14,8),%XMM9</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R10,%R15,8),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R10,%RDI,8),%XMM11</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV %R11,%RDI</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>IMUL %RAX,%RDI</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>VMULSD %XMM1,%XMM1,%XMM8</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %R12,%RAX</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>VMULSD %XMM11,%XMM11,%XMM12</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>LEA (%RSI,%RDI,1),%R14</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RDX,%RDI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>LEA (%RSI,%RAX,1),%R15</td><td>1</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RAX,%RDX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%R9,%R14,8),%XMM14</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV 0x38(%RSP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VMOVSD (%R10,%R15,8),%XMM15</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R10,%RDX,8),%XMM1</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV %R13,%R15</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>N/A</td></tr><tr><td>VFMADD132SD %XMM0,%XMM8,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%RAX</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>MOV 0x48(%RSP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>MOV 0x30(%RSP),%R14</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VFMADD132SD %XMM9,%XMM12,%XMM9</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%R15</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>VMULSD %XMM15,%XMM15,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMULSD %XMM1,%XMM1,%XMM8</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>ADD %RSI,%RAX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VMOVSD (%RDX,%RAX,8),%XMM12</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV 0x20(%RSP),%RDX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>ADD %RSI,%R15</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>MOV 0x50(%RSP),%RAX</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VADDSD %XMM9,%XMM0,%XMM13</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMOVSD (%R9,%RDI,8),%XMM0</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>MOV 0x28(%RSP),%RDI</td><td>1</td><td>0</td><td>0</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4-5</td><td>0.50</td><td>N/A</td></tr><tr><td>VADDSD %XMM12,%XMM6,%XMM6</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD %XMM14,%XMM14,%XMM2</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD132SD %XMM0,%XMM8,%XMM0</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>IMUL %RCX,%RDI</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>IMUL %RDX,%RCX</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>1</td><td>N/A</td></tr><tr><td>ADD %RSI,%RDI</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>ADD %RSI,%RCX</td><td>1</td><td>0.25</td><td>0.25</td><td>0</td><td>0</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.25</td><td>N/A</td></tr><tr><td>VADDSD %XMM2,%XMM0,%XMM9</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD (%RBX,%RCX,8),%XMM12,%XMM4</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VADDSD %XMM13,%XMM9,%XMM11</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMULSD (%R14,%RDI,8),%XMM12,%XMM13</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VMULSD %XMM7,%XMM13,%XMM14</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD (%RAX,%R15,8),%XMM13,%XMM5</td><td>1</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VADDSD %XMM13,%XMM10,%XMM10</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>VFMADD231SD %XMM11,%XMM14,%XMM3</td><td>1</td><td>0.50</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>0.50</td><td>scal (25.0%)</td></tr><tr><td>CMP %R8D,0x58(%RSP)</td><td>1</td><td>0.25</td><td>0.25</td><td>0.50</td><td>0.50</td><td>0</td><td>0.25</td><td>0.25</td><td>0</td><td>1</td><td>0.50</td><td>N/A</td></tr><tr><td>JNE 3e6f0 &lt;_Z13field_summaryR16global_variablesR9parallel_._omp_fn.0+0x110&gt;</td><td>1</td><td>0.50</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.50</td><td>0</td><td>0</td><td>0.50-1</td><td>N/A</td></tr></table>"
+                }
+              ],
+            "header":
+              [
+              "7% of peak computational performance is used (1.18 out of 16.00 FLOP per cycle (GFLOPS @ 1GHz))"
+              ],
+            "brief":
+              [
+
+              ],
+            "gain":
+              [
+                {
+                  "workaround": "<ul><li>Try to reorganize arrays of structures to structures of arrays</li><li>Consider to permute loops (see vectorization gain report)</li></ul>",
+                  "title": "Code clean check",
+                  "txt": "Detected a slowdown caused by scalar integer instructions (typically used for address computation).\nBy removing them, you can lower the cost of an iteration from 21.25 to 9.00 cycles (2.36x speedup)."
+                },
+                {
+                  "workaround": "<ul><li>Try another compiler or update/tune your current one</li><li>Remove inter-iterations dependences from your loop and make it unit-stride:\n<ul><li>If your arrays have 2 or more dimensions, check whether elements are accessed contiguously and, otherwise, try to permute loops accordingly:\nC storage order is row-major: for(i) for(j) a[j][i] = b[j][i]; (slow, non stride 1) =&gt; for(i) for(j) a[i][j] = b[i][j]; (fast, stride 1)<<image_row_maj>></li><li>If your loop streams arrays of structures (AoS), try to use structures of arrays instead (SoA):\nfor(i) a[i].x = b[i].x; (slow, non stride 1) =&gt; for(i) a.x[i] = b.x[i]; (fast, stride 1)</li></ul></li></ul>",
+                  "details": "All SSE/AVX instructions are used in scalar version (process only one data element in vector registers).\nSince your execution units are vector units, only a vectorized loop can use their full power.\n",
+                  "title": "Vectorization",
+                  "txt": "Your loop is not vectorized.\nOnly 24% of vector register length is used (average across all SSE/AVX instructions).\nBy vectorizing your loop, you can lower the cost of an iteration from 21.25 to 3.68 cycles (5.78x speedup)."
+                },
+                {
+                  "title": "Execution units bottlenecks",
+                  "txt": "Found no such bottlenecks but see expert reports for more complex bottlenecks."
+                }
+              ],
+            "potential":
+              [
+                {
+                  "title": "Expensive FP math instructions/calls",
+                  "txt": "Detected performance impact from expensive FP math instructions/calls.\nBy removing/reexpressing them, you can lower the cost of an iteration from 21.25 to 18.75 cycles (1.13x speedup)."
+                },
+                {
+                  "workaround": "Try to change order in which elements are evaluated (using parentheses) in arithmetic expressions containing both ADD/SUB and MUL operations to enable your compiler to generate FMA instructions wherever possible.\nEstimated speedup by perfect pairing: 1.06x.\nFor instance a + b*c is a valid FMA (MUL then ADD).\nHowever (a+b)* c cannot be translated into an FMA (ADD then MUL).",
+                  "title": "FMA",
+                  "txt": "Detected 7 FMA (fused multiply-add) operations.\nPresence of both ADD/SUB and MUL operations."
+                }
+              ]
+          }
+        ],
+      "common":
+        {
+          "header":
+            [
+            "The loop is defined in:\n<ul><li>/home/penda/aoc/CloverLeaf/src/omp/context.h:69</li><li>/home/penda/aoc/CloverLeaf/src/omp/field_summary.cpp:77-91</li></ul>\n",
+            "The related source loop is not unrolled or unrolled with no peel/tail loop."
+            ],
+          "nb_paths": 1
+        }
+    }
+}

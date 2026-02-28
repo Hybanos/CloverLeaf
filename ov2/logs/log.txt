@@ -1,0 +1,10 @@
+********************************************************************************
+MAQAO 2026.0.0 - 7e198a7ec9fb425c75ec6c6a36a98893b37a86d6::20260204-112052 || 2026/02/04
+maqao OV -R1 -xp=ov2 --replace -- ./build/omp-cloverleaf 
+CPY:  [true] ./build/omp-cloverleaf --> /home/penda/aoc/CloverLeaf/ov2/binaries/omp-cloverleaf
+CMD:   /home/penda/maqao.x86_64.2026.0.0/bin/maqao lprof _caller=oneview  --xp="/home/penda/aoc/CloverLeaf/ov2/tools/lprof_run_0" --mpi-command="" --collect-CPU-time-intervals --collect-topology tpp=1   -- /home/penda/aoc/CloverLeaf/ov2/binaries/omp-cloverleaf 
+Run run_0: At cluster level, discarded 0 functions cumulating 0.0% of application profiled time
+
+Run run_0: At cluster level, discarded 0 loops cumulating 0.0% of application profiled time
+
+CMD:  /home/penda/maqao.x86_64.2026.0.0/bin/maqao otter  -input=/home/penda/aoc/CloverLeaf/ov2/OTTER/input_manifest.csv -output=/home/penda/aoc/CloverLeaf/ov2/OTTER/output_manifest.csv --reduce-threads-files=on

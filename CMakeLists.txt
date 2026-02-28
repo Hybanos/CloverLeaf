@@ -36,7 +36,7 @@ endif ()
 
 # setup some defaults flags for everything
 set(DEFAULT_DEBUG_FLAGS -Wall -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -O2)
-set(DEFAULT_RELEASE_FLAGS -Wall -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -O3)
+set(DEFAULT_RELEASE_FLAGS -Wall -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable -O3 -g -march=native -fopenmp -mtune=native -ffast-math -funroll-loops -ftree-vectorize)
 
 macro(hint_flag FLAG DESCRIPTION)
     if (NOT DEFINED ${FLAG})

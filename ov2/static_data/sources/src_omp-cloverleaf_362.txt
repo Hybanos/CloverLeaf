@@ -1,0 +1,5 @@
+/home/penda/aoc/CloverLeaf/src/omp/reset_field.cpp: 37 - 38
+--------------------------------------------------------------------------------
+
+37:       density0(i, j) = density1(i, j);
+38:       energy0(i, j) = energy1(i, j);

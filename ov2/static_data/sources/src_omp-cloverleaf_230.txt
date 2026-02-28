@@ -1,0 +1,9 @@
+/home/penda/aoc/CloverLeaf/src/omp/advec_cell.cpp: 211 - 216
+--------------------------------------------------------------------------------
+
+211:         double pre_mass_s = density1(i, j) * pre_vol(i, j);
+212:         double post_mass_s = pre_mass_s + mass_flux_y(i, j) - mass_flux_y(i + 0, j + 1);
+213:         double post_ener_s = (energy1(i, j) * pre_mass_s + ener_flux(i, j) - ener_flux(i + 0, j + 1)) / post_mass_s;
+214:         double advec_vol_s = pre_vol(i, j) + vol_flux_y(i, j) - vol_flux_y(i + 0, j + 1);
+215:         density1(i, j) = post_mass_s / advec_vol_s;
+216:         energy1(i, j) = post_ener_s;

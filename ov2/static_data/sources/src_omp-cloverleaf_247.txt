@@ -1,0 +1,10 @@
+/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp: 98 - 100
+--------------------------------------------------------------------------------
+
+98:           node_mass_post(i, j) = 0.25 * (density1(i + 0, j - 1) * post_vol(i + 0, j - 1) + density1(i, j) * post_vol(i, j) +
+99:                                          density1(i - 1, j - 1) * post_vol(i - 1, j - 1) + density1(i - 1, j + 0) * post_vol(i - 1, j + 0));
+100:           node_mass_pre(i, j) = node_mass_post(i, j) - node_flux(i - 1, j + 0) + node_flux(i, j);
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 69 - 69
+--------------------------------------------------------------------------------
+
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }

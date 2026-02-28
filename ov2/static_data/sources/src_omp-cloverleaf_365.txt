@@ -1,0 +1,5 @@
+/home/penda/aoc/CloverLeaf/src/omp/revert.cpp: 37 - 38
+--------------------------------------------------------------------------------
+
+37:       density1(i, j) = density0(i, j);
+38:       energy1(i, j) = energy0(i, j);

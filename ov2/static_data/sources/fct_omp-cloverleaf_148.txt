@@ -1,0 +1,16 @@
+/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp: 37 - 45
+--------------------------------------------------------------------------------
+
+37: #pragma omp parallel for simd collapse(2)
+38:   for (int j = (y_min + 1); j < (y_max + 2); j++) {
+39:     for (int i = (x_min + 1); i < (x_max + 2); i++) {
+40:       double v = 1.0 / density(i, j);
+41:       pressure(i, j) = (1.4 - 1.0) * density(i, j) * energy(i, j);
+42:       double pressurebyenergy = (1.4 - 1.0) * density(i, j);
+43:       double pressurebyvolume = -density(i, j) * pressure(i, j);
+44:       double sound_speed_squared = v * v * (pressure(i, j) * pressurebyenergy - pressurebyvolume);
+45:       soundspeed(i, j) = std::sqrt(sound_speed_squared);
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 69 - 69
+--------------------------------------------------------------------------------
+
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }
