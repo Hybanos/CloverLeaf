@@ -5,7 +5,7 @@
       "status": "good",
       "score": 4,
       "max_score": 4,
-      "text": "Enough time of the experiment time spent in analyzed loops (75.47%)",
+      "text": "Enough time of the experiment time spent in analyzed loops (78.40%)",
       "desc": "If the time spent in analyzed loops is less than 30%, standard loop optimizations will have a limited impact on application performances."
     },
     {
@@ -13,7 +13,7 @@
       "status": "warning",
       "score": 2,
       "max_score": 4,
-      "text": "A significant amount of threads are idle (39.79%)",
+      "text": "A significant amount of threads are idle (31.43%)",
       "desc": "On average, more than 10% of observed threads are idle. Such threads are probably IO/sync waiting. Some hints: use faster filesystems to read/write data, improve parallel load balancing and/or scheduling."
     },
     {
@@ -21,7 +21,7 @@
       "status": "warning",
       "score": 2,
       "max_score": 4,
-      "text": "CPU activity is below 90% (60.21%)",
+      "text": "CPU activity is below 90% (68.58%)",
       "desc": "CPU cores are idle more than 10% of time. Threads supposed to run on these cores are probably IO/sync waiting. Some hints: use faster filesystems to read/write data, improve parallel load balancing and/or scheduling."
     },
     {
@@ -30,14 +30,14 @@
       "score": 4,
       "max_score": 4,
       "text": "Loop profile is not flat",
-      "desc": "At least one loop coverage is greater than 4% (6.40%), representing an hotspot for the application"
+      "desc": "At least one loop coverage is greater than 4% (6.42%), representing an hotspot for the application"
     },
     {
       "name": "lvl1_innermost_loops_coverage",
       "status": "good",
       "score": 4,
       "max_score": 4,
-      "text": "Enough time of the experiment time spent in analyzed innermost loops (75.24%)",
+      "text": "Enough time of the experiment time spent in analyzed innermost loops (78.10%)",
       "desc": "If the time spent in analyzed innermost loops is less than 15%, standard innermost loop optimizations such as vectorisation will have a limited impact on application performances."
     },
     {
@@ -45,7 +45,7 @@
       "status": "bad",
       "score": 0,
       "max_score": 4,
-      "text": "Affinity stability is lower than 90% (2.85%)",
+      "text": "Affinity stability is lower than 90% (4.42%)",
       "desc": "Threads are often migrating to other CPU cores/threads. For OpenMP, typically set (OMP_PLACES=cores OMP_PROC_BIND=close) or (OMP_PLACES=threads OMP_PROC_BIND=spread). With OpenMPI + OpenMP, use --bind-to core --map-by node:PE=$OMP_NUM_THREADS --report-bindings. With IntelMPI + OpenMP, set I_MPI_PIN_DOMAIN=omp:compact or I_MPI_PIN_DOMAIN=omp:scatter and use -print-rank-map."
     },
     {
@@ -62,14 +62,14 @@
       "score": 3,
       "max_score": 3,
       "text": "Functions mostly use all threads",
-      "desc": "Functions running on a reduced number of threads (typically sequential code) cover less than 10% of application walltime (0.19%)"
+      "desc": "Functions running on a reduced number of threads (typically sequential code) cover less than 10% of application walltime (0.24%)"
     },
     {
       "name": "lvl1_is_more_innermost_than_other",
       "status": "good",
       "score": 3,
       "max_score": 3,
-      "text": "Cumulative Outermost/In between loops coverage (0.23%) lower than cumulative innermost loop coverage (75.24%)",
+      "text": "Cumulative Outermost/In between loops coverage (0.30%) lower than cumulative innermost loop coverage (78.10%)",
       "desc": "Having cumulative Outermost/In between loops coverage greater than cumulative innermost loop coverage will make loop optimization more complex"
     },
     {

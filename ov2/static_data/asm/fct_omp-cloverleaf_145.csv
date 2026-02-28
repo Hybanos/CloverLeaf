@@ -1,270 +1,270 @@
 address;source_location;insn;indent
-0x3f590;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;ENDBR64;
-0x3f594;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%RBP;
-0x3f595;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%RSP,%RBP;
-0x3f598;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R15;
-0x3f59a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R14;
-0x3f59c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R13;
-0x3f59e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R12;
-0x3f5a0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%RBX;
-0x3f5a1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;AND	$-0x20,%RSP;
-0x3f5a5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;ADD	$-0x80,%RSP;
-0x3f5a9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x2c(%RDI),%R15D;
-0x3f5ad;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x28(%RDI),%R14D;
-0x3f5b1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%R15D,0x38(%RSP);
-0x3f5b6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%R14D,0x34(%RSP);
-0x3f5bb;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;TEST	%R15D,%R15D;
-0x3f5be;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JLE	3f9f3 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x463>;
-0x3f5c4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;TEST	%R14D,%R14D;
-0x3f5c7;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JLE	3f9f3 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x463>;
-0x3f5cd;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%RDI,%RBX;
-0x3f5d0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CALL	3b00 <.plt.sec@start+0x530>;
-0x3f5d5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EAX,%R12D;
-0x3f5d8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CALL	39f0 <.plt.sec@start+0x420>;
-0x3f5dd;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XOR	%EDX,%EDX;
-0x3f5df;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EAX,%ECX;
-0x3f5e1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%R15D,%EAX;
-0x3f5e4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;IMUL	%R14D,%EAX;
-0x3f5e8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;DIV	%R12D;
-0x3f5eb;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EAX,%R15D;
-0x3f5ee;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CMP	%EDX,%ECX;
-0x3f5f0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JB	3fa14 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x484>;
-0x3f5f6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;IMUL	%R15D,%ECX;
-0x3f5fa;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;ADD	%EDX,%ECX;
-0x3f5fc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;LEA	(%R15,%RCX,1),%EDI;
-0x3f600;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EDI,0x30(%RSP);
-0x3f604;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CMP	%EDI,%ECX;
-0x3f606;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JAE	3f9f3 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x463>;
-0x3f60c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x34(%RSP),%R8D;
-0x3f611;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%ECX,%EAX;
-0x3f613;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XOR	%EDX,%EDX;
-0x3f615;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x8(%RBX),%R9;
-0x3f619;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;MOV	(%RBX),%R10;
-0x3f61c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;MOV	0x10(%RBX),%R11;
-0x3f620;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;DIV	%R8D;
-0x3f623;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x18(%RBX),%R13;
-0x3f627;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	%R9,0x28(%RSP);
-0x3f62c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;MOV	%R10,0x20(%RSP);
-0x3f631;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;MOV	%R11,0x18(%RSP);
-0x3f636;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R13,0x10(%RSP);
-0x3f63b;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CLTQ;
-0x3f63d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;SUB	%EDX,%R8D;
-0x3f640;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%EDX,0x58(%RSP);
-0x3f644;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%RAX,0x50(%RSP);
-0x3f649;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R8D,%EDX;
-0x3f64c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x20(%RBX),%R8;
-0x3f650;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CMP	%EDX,%R15D;(297) 
-0x3f653;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CMOVBE	%R15D,%EDX;(297) 
-0x3f657;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;LEA	(%RCX,%RDX,1),%ESI;(297) 
-0x3f65a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	%EDX,0x5c(%RSP);(297) 
-0x3f65e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	%ESI,0x3c(%RSP);(297) 
-0x3f662;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CMP	%ESI,%ECX;(297) 
-0x3f664;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;JAE	3f9c4 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x434>;(297) 
-0x3f66a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x50(%RSP),%R12;(297) 
-0x3f66f;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x28(%RSP),%RCX;(297) 
-0x3f674;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x18(%RSP),%RAX;(297) 
-0x3f679;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x30(%R8),%R9;(297) 
-0x3f67d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%R8),%R14;(297) 
-0x3f680;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0xa8(%R8),%R13;(297) 
-0x3f687;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R12,%R9;(297) 
-0x3f68b;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%RCX),%RDI;(297) 
-0x3f68f;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%RAX),%RCX;(297) 
-0x3f693;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R12,%R14;(297) 
-0x3f697;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x5c(%RSP),%EAX;(297) 
-0x3f69b;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x20(%RSP),%R15;(297) 
-0x3f6a0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R12,%R13;(297) 
-0x3f6a4;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x10(%RSP),%RDX;(297) 
-0x3f6a9;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x40(%R8),%RBX;(297) 
-0x3f6ad;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	0xd8(%R8),%R12;(297) 
-0x3f6b5;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;DEC	%EAX;(297) 
-0x3f6b7;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%R15),%RSI;(297) 
-0x3f6bb;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x60(%RSP);(297) 
-0x3f6c0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%R8),%R11;(297) 
-0x3f6c4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0xb8(%R8),%R10;(297) 
-0x3f6cb;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R14,0x68(%RSP);(297) 
-0x3f6d0;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%RDX),%RDX;(297) 
-0x3f6d4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0xe8(%R8),%R15;(297) 
-0x3f6db;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R13,0x70(%RSP);(297) 
-0x3f6e0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R12,0x78(%RSP);(297) 
-0x3f6e5;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%EAX;(297) 
-0x3f6e8;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JBE	3fa08 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x478>;(297) 
-0x3f6ee;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOVSXD	0x58(%RSP),%RAX;(297) 
-0x3f6f3;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%R9;(297) 
-0x3f6f6;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R14,%RAX,1),%R14;(297) 
-0x3f6fa;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R13,%RAX,1),%R13;(297) 
-0x3f6ff;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%R12,%RAX;(297) 
-0x3f702;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RBX,%R9,8),%R9;(297) 
-0x3f706;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R15,%RAX,8),%R12;(297) 
-0x3f70a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%EAX,%EAX;(297) 
-0x3f70c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x48(%RSP);(297) 
-0x3f711;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x5c(%RSP),%R9D;(297) 
-0x3f716;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R11,%R14,8),%R14;(297) 
-0x3f71a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R10,%R13,8),%R13;(297) 
-0x3f71e;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x2,%R9D;(297) 
-0x3f722;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SAL	$0x5,%R9;(297) 
-0x3f726;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x40(%RSP);(297) 
-0x3f72b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SUB	$0x20,%R9;(297) 
-0x3f72f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x5,%R9;(297) 
-0x3f733;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%R9;(297) 
-0x3f736;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;AND	$0x3,%R9D;(297) 
-0x3f73a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	3f7f9 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x269>;(297) 
-0x3f740;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x1,%R9;(297) 
-0x3f744;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	3f7b5 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x225>;(297) 
-0x3f746;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%R9;(297) 
-0x3f74a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	3f77f <_Z14generate_chunkiR16global_variables._omp_fn.0+0x1ef>;(297) 
-0x3f74c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM0;(297) 
-0x3f751;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x48(%RSP),%RAX;(297) 
-0x3f756;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM0,(%RAX);(297) 
-0x3f75a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	$0x20,%EAX;(297) 
-0x3f75f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM1;(297) 
-0x3f764;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM1,(%R14);(297) 
-0x3f769;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM2;(297) 
-0x3f76e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM2,(%R13);(297) 
-0x3f774;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM3;(297) 
-0x3f779;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM3,(%R12);(297) 
-0x3f77f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM4;(297) 
-0x3f784;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x48(%RSP),%R9;(297) 
-0x3f789;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM4,(%R9,%RAX,1);(297) 
-0x3f78f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM5;(297) 
-0x3f794;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM5,(%R14,%RAX,1);(297) 
-0x3f79a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM6;(297) 
-0x3f79f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM6,(%R13,%RAX,1);(297) 
-0x3f7a6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM7;(297) 
-0x3f7ab;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM7,(%R12,%RAX,1);(297) 
-0x3f7b1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	$0x20,%RAX;(297) 
-0x3f7b5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM8;(297) 
-0x3f7ba;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x48(%RSP),%R9;(297) 
-0x3f7bf;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM8,(%R9,%RAX,1);(297) 
-0x3f7c5;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x40(%RSP),%R9;(297) 
-0x3f7ca;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM9;(297) 
-0x3f7cf;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM9,(%R14,%RAX,1);(297) 
-0x3f7d5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM10;(297) 
-0x3f7da;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM10,(%R13,%RAX,1);(297) 
-0x3f7e1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM11;(297) 
-0x3f7e6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM11,(%R12,%RAX,1);(297) 
-0x3f7ec;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	$0x20,%RAX;(297) 
-0x3f7f0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CMP	%R9,%RAX;(297) 
-0x3f7f3;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f8d7 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x347>;(297) 
-0x3f7f9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R8,0x8(%RSP);(297) 
-0x3f7fe;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x48(%RSP),%R8;(297) 
-0x3f803;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM12;  (298) 
-0x3f808;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM12,(%R8,%RAX,1);  (298) 
-0x3f80e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM13;  (298) 
-0x3f813;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM13,(%R14,%RAX,1);  (298) 
-0x3f819;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM14;  (298) 
-0x3f81e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM14,(%R13,%RAX,1);  (298) 
-0x3f825;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM15;  (298) 
-0x3f82a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM15,(%R12,%RAX,1);  (298) 
-0x3f830;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM0;  (298) 
-0x3f835;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM0,0x20(%R8,%RAX,1);  (298) 
-0x3f83c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM1;  (298) 
-0x3f841;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM1,0x20(%R14,%RAX,1);  (298) 
-0x3f848;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM2;  (298) 
-0x3f84d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM2,0x20(%R13,%RAX,1);  (298) 
-0x3f854;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM3;  (298) 
-0x3f859;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM3,0x20(%R12,%RAX,1);  (298) 
-0x3f860;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM4;  (298) 
-0x3f865;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM4,0x40(%R8,%RAX,1);  (298) 
-0x3f86c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM5;  (298) 
-0x3f871;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM5,0x40(%R14,%RAX,1);  (298) 
-0x3f878;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM6;  (298) 
-0x3f87d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM6,0x40(%R13,%RAX,1);  (298) 
-0x3f884;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM7;  (298) 
-0x3f889;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM7,0x40(%R12,%RAX,1);  (298) 
-0x3f890;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM8;  (298) 
-0x3f895;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM8,0x60(%R8,%RAX,1);  (298) 
-0x3f89c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM9;  (298) 
-0x3f8a1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM9,0x60(%R14,%RAX,1);  (298) 
-0x3f8a8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM10;  (298) 
-0x3f8ad;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM10,0x60(%R13,%RAX,1);  (298) 
-0x3f8b4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM11;  (298) 
-0x3f8b9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM11,0x60(%R12,%RAX,1);  (298) 
-0x3f8c0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x40(%RSP),%R9;  (298) 
-0x3f8c5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;SUB	$-0x80,%RAX;  (298) 
-0x3f8c9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CMP	%R9,%RAX;  (298) 
-0x3f8cc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JNE	3f803 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x273>;  (298) 
-0x3f8d2;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x8(%RSP),%R8;(297) 
-0x3f8d7;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x5c(%RSP),%R14D;(297) 
-0x3f8dc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x58(%RSP),%EAX;(297) 
-0x3f8e0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R14D,%R12D;(297) 
-0x3f8e3;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;AND	$-0x4,%R12D;(297) 
-0x3f8e7;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R12D,%EAX;(297) 
-0x3f8ea;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;AND	$0x3,%R14D;(297) 
-0x3f8ee;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f9c0 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x430>;(297) 
-0x3f8f4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x5c(%RSP),%R13D;(297) 
-0x3f8f9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;SUB	%R12D,%R13D;(297) 
-0x3f8fc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CMP	$0x1,%R13D;(297) 
-0x3f900;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f977 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x3e7>;(297) 
-0x3f902;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOVSXD	0x58(%RSP),%R9;(297) 
-0x3f907;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x60(%RSP),%R14;(297) 
-0x3f90c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVDDUP	(%RDI),%XMM15;(297) 
-0x3f910;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RSI),%XMM12;(297) 
-0x3f914;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RCX),%XMM13;(297) 
-0x3f918;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;ADD	%R9,%R14;(297) 
-0x3f91b;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RDX),%XMM14;(297) 
-0x3f91f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;ADD	%R12,%R14;(297) 
-0x3f922;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVDDUP	%XMM12,%XMM0;(297) 
-0x3f927;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVDDUP	%XMM13,%XMM1;(297) 
-0x3f92c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%XMM15,(%RBX,%R14,8);(297) 
-0x3f932;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;MOV	0x68(%RSP),%R14;(297) 
-0x3f937;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVDDUP	%XMM14,%XMM2;(297) 
-0x3f93c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;ADD	%R9,%R14;(297) 
-0x3f93f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;ADD	%R12,%R14;(297) 
-0x3f942;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%XMM0,(%R11,%R14,8);(297) 
-0x3f948;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;MOV	0x70(%RSP),%R14;(297) 
-0x3f94d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;ADD	%R9,%R14;(297) 
-0x3f950;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;ADD	%R12,%R14;(297) 
-0x3f953;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%XMM1,(%R10,%R14,8);(297) 
-0x3f959;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x78(%RSP),%R14;(297) 
-0x3f95e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R14,%R9;(297) 
-0x3f961;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R12,%R9;(297) 
-0x3f964;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%XMM2,(%R15,%R9,8);(297) 
-0x3f96a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;TEST	$0x1,%R13B;(297) 
-0x3f96e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f9c0 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x430>;(297) 
-0x3f970;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;AND	$-0x2,%R13D;(297) 
-0x3f974;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R13D,%EAX;(297) 
-0x3f977;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RDI),%XMM3;(297) 
-0x3f97b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x60(%RSP),%RDI;(297) 
-0x3f980;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CLTQ;(297) 
-0x3f982;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RDI;(297) 
-0x3f985;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	%XMM3,(%RBX,%RDI,8);(297) 
-0x3f98a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x68(%RSP),%RBX;(297) 
-0x3f98f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVSD	(%RSI),%XMM4;(297) 
-0x3f993;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x70(%RSP),%RSI;(297) 
-0x3f998;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RBX;(297) 
-0x3f99b;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVSD	%XMM4,(%R11,%RBX,8);(297) 
-0x3f9a1;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RSI;(297) 
-0x3f9a4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x78(%RSP),%R11;(297) 
-0x3f9a9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVSD	(%RCX),%XMM5;(297) 
-0x3f9ad;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%R11;(297) 
-0x3f9b0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVSD	%XMM5,(%R10,%RSI,8);(297) 
-0x3f9b6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVSD	(%RDX),%XMM6;(297) 
-0x3f9ba;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVSD	%XMM6,(%R15,%R11,8);(297) 
-0x3f9c0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x3c(%RSP),%ECX;(297) 
-0x3f9c4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;INCQ	0x50(%RSP);(297) 
-0x3f9c9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x50(%RSP),%R10;(297) 
-0x3f9ce;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CMP	%R10D,0x38(%RSP);(297) 
-0x3f9d3;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JLE	3f9f0 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x460>;(297) 
-0x3f9d5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x30(%RSP),%R15D;(297) 
-0x3f9da;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x34(%RSP),%EDX;(297) 
-0x3f9de;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOVL	$0,0x58(%RSP);(297) 
-0x3f9e6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;SUB	%ECX,%R15D;(297) 
-0x3f9e9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JMP	3f650 <_Z14generate_chunkiR16global_variables._omp_fn.0+0xc0>;(297) 
-0x3f9ee;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XCHG	%AX,%AX;
-0x3f9f0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;VZEROUPPER;
-0x3f9f3;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;LEA	-0x28(%RBP),%RSP;
-0x3f9f7;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%RBX;
-0x3f9f8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R12;
-0x3f9fa;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R13;
-0x3f9fc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R14;
-0x3f9fe;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R15;
-0x3fa00;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%RBP;
-0x3fa01;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;RET;
-0x3fa02;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;NOPW	(%RAX,%RAX,1);
-0x3fa08;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x58(%RSP),%EAX;(297) 
-0x3fa0c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%R12D,%R12D;(297) 
-0x3fa0f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JMP	3f8f4 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x364>;(297) 
-0x3fa14;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%R15D;
-0x3fa17;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XOR	%EDX,%EDX;
-0x3fa19;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JMP	3f5f6 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x66>;
-0x3fa1e;:0;XCHG	%AX,%AX;
+0x3f4c0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;ENDBR64;
+0x3f4c4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%RBP;
+0x3f4c5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%RSP,%RBP;
+0x3f4c8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R15;
+0x3f4ca;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R14;
+0x3f4cc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R13;
+0x3f4ce;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%R12;
+0x3f4d0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;PUSH	%RBX;
+0x3f4d1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;AND	$-0x20,%RSP;
+0x3f4d5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;ADD	$-0x80,%RSP;
+0x3f4d9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x2c(%RDI),%R15D;
+0x3f4dd;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x28(%RDI),%R14D;
+0x3f4e1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%R15D,0x38(%RSP);
+0x3f4e6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%R14D,0x34(%RSP);
+0x3f4eb;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;TEST	%R15D,%R15D;
+0x3f4ee;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JLE	3f923 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x463>;
+0x3f4f4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;TEST	%R14D,%R14D;
+0x3f4f7;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JLE	3f923 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x463>;
+0x3f4fd;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%RDI,%RBX;
+0x3f500;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CALL	3b00 <.plt.sec@start+0x530>;
+0x3f505;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EAX,%R12D;
+0x3f508;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CALL	39f0 <.plt.sec@start+0x420>;
+0x3f50d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XOR	%EDX,%EDX;
+0x3f50f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EAX,%ECX;
+0x3f511;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%R15D,%EAX;
+0x3f514;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;IMUL	%R14D,%EAX;
+0x3f518;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;DIV	%R12D;
+0x3f51b;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EAX,%R15D;
+0x3f51e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CMP	%EDX,%ECX;
+0x3f520;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JB	3f944 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x484>;
+0x3f526;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;IMUL	%R15D,%ECX;
+0x3f52a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;ADD	%EDX,%ECX;
+0x3f52c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;LEA	(%R15,%RCX,1),%EDI;
+0x3f530;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%EDI,0x30(%RSP);
+0x3f534;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CMP	%EDI,%ECX;
+0x3f536;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JAE	3f923 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x463>;
+0x3f53c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x34(%RSP),%R8D;
+0x3f541;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	%ECX,%EAX;
+0x3f543;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XOR	%EDX,%EDX;
+0x3f545;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x8(%RBX),%R9;
+0x3f549;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;MOV	(%RBX),%R10;
+0x3f54c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;MOV	0x10(%RBX),%R11;
+0x3f550;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;DIV	%R8D;
+0x3f553;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x18(%RBX),%R13;
+0x3f557;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	%R9,0x28(%RSP);
+0x3f55c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;MOV	%R10,0x20(%RSP);
+0x3f561;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;MOV	%R11,0x18(%RSP);
+0x3f566;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R13,0x10(%RSP);
+0x3f56b;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CLTQ;
+0x3f56d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;SUB	%EDX,%R8D;
+0x3f570;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%EDX,0x58(%RSP);
+0x3f574;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%RAX,0x50(%RSP);
+0x3f579;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R8D,%EDX;
+0x3f57c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x20(%RBX),%R8;
+0x3f580;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CMP	%EDX,%R15D;(296) 
+0x3f583;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CMOVBE	%R15D,%EDX;(296) 
+0x3f587;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;LEA	(%RCX,%RDX,1),%ESI;(296) 
+0x3f58a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	%EDX,0x5c(%RSP);(296) 
+0x3f58e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	%ESI,0x3c(%RSP);(296) 
+0x3f592;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CMP	%ESI,%ECX;(296) 
+0x3f594;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;JAE	3f8f4 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x434>;(296) 
+0x3f59a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x50(%RSP),%R12;(296) 
+0x3f59f;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x28(%RSP),%RCX;(296) 
+0x3f5a4;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x18(%RSP),%RAX;(296) 
+0x3f5a9;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x30(%R8),%R9;(296) 
+0x3f5ad;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%R8),%R14;(296) 
+0x3f5b0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0xa8(%R8),%R13;(296) 
+0x3f5b7;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R12,%R9;(296) 
+0x3f5bb;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%RCX),%RDI;(296) 
+0x3f5bf;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%RAX),%RCX;(296) 
+0x3f5c3;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R12,%R14;(296) 
+0x3f5c7;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x5c(%RSP),%EAX;(296) 
+0x3f5cb;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x20(%RSP),%R15;(296) 
+0x3f5d0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R12,%R13;(296) 
+0x3f5d4;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x10(%RSP),%RDX;(296) 
+0x3f5d9;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x40(%R8),%RBX;(296) 
+0x3f5dd;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	0xd8(%R8),%R12;(296) 
+0x3f5e5;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;DEC	%EAX;(296) 
+0x3f5e7;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%R15),%RSI;(296) 
+0x3f5eb;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x60(%RSP);(296) 
+0x3f5f0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%R8),%R11;(296) 
+0x3f5f4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0xb8(%R8),%R10;(296) 
+0x3f5fb;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R14,0x68(%RSP);(296) 
+0x3f600;/home/penda/aoc/CloverLeaf/src/omp/context.h:46;MOV	0x8(%RDX),%RDX;(296) 
+0x3f604;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0xe8(%R8),%R15;(296) 
+0x3f60b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R13,0x70(%RSP);(296) 
+0x3f610;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R12,0x78(%RSP);(296) 
+0x3f615;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%EAX;(296) 
+0x3f618;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JBE	3f938 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x478>;(296) 
+0x3f61e;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOVSXD	0x58(%RSP),%RAX;(296) 
+0x3f623;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%R9;(296) 
+0x3f626;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R14,%RAX,1),%R14;(296) 
+0x3f62a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R13,%RAX,1),%R13;(296) 
+0x3f62f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%R12,%RAX;(296) 
+0x3f632;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RBX,%R9,8),%R9;(296) 
+0x3f636;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R15,%RAX,8),%R12;(296) 
+0x3f63a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%EAX,%EAX;(296) 
+0x3f63c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x48(%RSP);(296) 
+0x3f641;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x5c(%RSP),%R9D;(296) 
+0x3f646;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R11,%R14,8),%R14;(296) 
+0x3f64a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R10,%R13,8),%R13;(296) 
+0x3f64e;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x2,%R9D;(296) 
+0x3f652;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SAL	$0x5,%R9;(296) 
+0x3f656;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x40(%RSP);(296) 
+0x3f65b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SUB	$0x20,%R9;(296) 
+0x3f65f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x5,%R9;(296) 
+0x3f663;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%R9;(296) 
+0x3f666;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;AND	$0x3,%R9D;(296) 
+0x3f66a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	3f729 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x269>;(296) 
+0x3f670;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x1,%R9;(296) 
+0x3f674;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	3f6e5 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x225>;(296) 
+0x3f676;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%R9;(296) 
+0x3f67a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	3f6af <_Z14generate_chunkiR16global_variables._omp_fn.0+0x1ef>;(296) 
+0x3f67c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM0;(296) 
+0x3f681;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x48(%RSP),%RAX;(296) 
+0x3f686;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM0,(%RAX);(296) 
+0x3f68a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	$0x20,%EAX;(296) 
+0x3f68f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM1;(296) 
+0x3f694;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM1,(%R14);(296) 
+0x3f699;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM2;(296) 
+0x3f69e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM2,(%R13);(296) 
+0x3f6a4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM3;(296) 
+0x3f6a9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM3,(%R12);(296) 
+0x3f6af;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM4;(296) 
+0x3f6b4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x48(%RSP),%R9;(296) 
+0x3f6b9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM4,(%R9,%RAX,1);(296) 
+0x3f6bf;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM5;(296) 
+0x3f6c4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM5,(%R14,%RAX,1);(296) 
+0x3f6ca;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM6;(296) 
+0x3f6cf;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM6,(%R13,%RAX,1);(296) 
+0x3f6d6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM7;(296) 
+0x3f6db;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM7,(%R12,%RAX,1);(296) 
+0x3f6e1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	$0x20,%RAX;(296) 
+0x3f6e5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM8;(296) 
+0x3f6ea;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x48(%RSP),%R9;(296) 
+0x3f6ef;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM8,(%R9,%RAX,1);(296) 
+0x3f6f5;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x40(%RSP),%R9;(296) 
+0x3f6fa;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM9;(296) 
+0x3f6ff;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM9,(%R14,%RAX,1);(296) 
+0x3f705;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM10;(296) 
+0x3f70a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM10,(%R13,%RAX,1);(296) 
+0x3f711;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM11;(296) 
+0x3f716;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM11,(%R12,%RAX,1);(296) 
+0x3f71c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	$0x20,%RAX;(296) 
+0x3f720;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CMP	%R9,%RAX;(296) 
+0x3f723;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f807 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x347>;(296) 
+0x3f729;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R8,0x8(%RSP);(296) 
+0x3f72e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x48(%RSP),%R8;(296) 
+0x3f733;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM12;  (297) 
+0x3f738;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM12,(%R8,%RAX,1);  (297) 
+0x3f73e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM13;  (297) 
+0x3f743;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM13,(%R14,%RAX,1);  (297) 
+0x3f749;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM14;  (297) 
+0x3f74e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM14,(%R13,%RAX,1);  (297) 
+0x3f755;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM15;  (297) 
+0x3f75a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM15,(%R12,%RAX,1);  (297) 
+0x3f760;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM0;  (297) 
+0x3f765;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM0,0x20(%R8,%RAX,1);  (297) 
+0x3f76c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM1;  (297) 
+0x3f771;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM1,0x20(%R14,%RAX,1);  (297) 
+0x3f778;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM2;  (297) 
+0x3f77d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM2,0x20(%R13,%RAX,1);  (297) 
+0x3f784;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM3;  (297) 
+0x3f789;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM3,0x20(%R12,%RAX,1);  (297) 
+0x3f790;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM4;  (297) 
+0x3f795;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM4,0x40(%R8,%RAX,1);  (297) 
+0x3f79c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM5;  (297) 
+0x3f7a1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM5,0x40(%R14,%RAX,1);  (297) 
+0x3f7a8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM6;  (297) 
+0x3f7ad;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM6,0x40(%R13,%RAX,1);  (297) 
+0x3f7b4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM7;  (297) 
+0x3f7b9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM7,0x40(%R12,%RAX,1);  (297) 
+0x3f7c0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VBROADCASTSD	(%RDI),%YMM8;  (297) 
+0x3f7c5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%YMM8,0x60(%R8,%RAX,1);  (297) 
+0x3f7cc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VBROADCASTSD	(%RSI),%YMM9;  (297) 
+0x3f7d1;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%YMM9,0x60(%R14,%RAX,1);  (297) 
+0x3f7d8;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VBROADCASTSD	(%RCX),%YMM10;  (297) 
+0x3f7dd;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%YMM10,0x60(%R13,%RAX,1);  (297) 
+0x3f7e4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VBROADCASTSD	(%RDX),%YMM11;  (297) 
+0x3f7e9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%YMM11,0x60(%R12,%RAX,1);  (297) 
+0x3f7f0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x40(%RSP),%R9;  (297) 
+0x3f7f5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;SUB	$-0x80,%RAX;  (297) 
+0x3f7f9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CMP	%R9,%RAX;  (297) 
+0x3f7fc;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JNE	3f733 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x273>;  (297) 
+0x3f802;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x8(%RSP),%R8;(296) 
+0x3f807;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x5c(%RSP),%R14D;(296) 
+0x3f80c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x58(%RSP),%EAX;(296) 
+0x3f810;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	%R14D,%R12D;(296) 
+0x3f813;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;AND	$-0x4,%R12D;(296) 
+0x3f817;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R12D,%EAX;(296) 
+0x3f81a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;AND	$0x3,%R14D;(296) 
+0x3f81e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f8f0 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x430>;(296) 
+0x3f824;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x5c(%RSP),%R13D;(296) 
+0x3f829;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;SUB	%R12D,%R13D;(296) 
+0x3f82c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;CMP	$0x1,%R13D;(296) 
+0x3f830;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f8a7 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x3e7>;(296) 
+0x3f832;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOVSXD	0x58(%RSP),%R9;(296) 
+0x3f837;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;MOV	0x60(%RSP),%R14;(296) 
+0x3f83c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVDDUP	(%RDI),%XMM15;(296) 
+0x3f840;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RSI),%XMM12;(296) 
+0x3f844;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RCX),%XMM13;(296) 
+0x3f848;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;ADD	%R9,%R14;(296) 
+0x3f84b;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RDX),%XMM14;(296) 
+0x3f84f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;ADD	%R12,%R14;(296) 
+0x3f852;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVDDUP	%XMM12,%XMM0;(296) 
+0x3f857;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVDDUP	%XMM13,%XMM1;(296) 
+0x3f85c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVUPD	%XMM15,(%RBX,%R14,8);(296) 
+0x3f862;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;MOV	0x68(%RSP),%R14;(296) 
+0x3f867;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVDDUP	%XMM14,%XMM2;(296) 
+0x3f86c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;ADD	%R9,%R14;(296) 
+0x3f86f;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;ADD	%R12,%R14;(296) 
+0x3f872;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVUPD	%XMM0,(%R11,%R14,8);(296) 
+0x3f878;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;MOV	0x70(%RSP),%R14;(296) 
+0x3f87d;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;ADD	%R9,%R14;(296) 
+0x3f880;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;ADD	%R12,%R14;(296) 
+0x3f883;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVUPD	%XMM1,(%R10,%R14,8);(296) 
+0x3f889;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;MOV	0x78(%RSP),%R14;(296) 
+0x3f88e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R14,%R9;(296) 
+0x3f891;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R12,%R9;(296) 
+0x3f894;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVUPD	%XMM2,(%R15,%R9,8);(296) 
+0x3f89a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;TEST	$0x1,%R13B;(296) 
+0x3f89e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;JE	3f8f0 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x430>;(296) 
+0x3f8a0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;AND	$-0x2,%R13D;(296) 
+0x3f8a4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;ADD	%R13D,%EAX;(296) 
+0x3f8a7;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	(%RDI),%XMM3;(296) 
+0x3f8ab;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x60(%RSP),%RDI;(296) 
+0x3f8b0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;CLTQ;(296) 
+0x3f8b2;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RDI;(296) 
+0x3f8b5;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:77;VMOVSD	%XMM3,(%RBX,%RDI,8);(296) 
+0x3f8ba;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x68(%RSP),%RBX;(296) 
+0x3f8bf;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVSD	(%RSI),%XMM4;(296) 
+0x3f8c3;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x70(%RSP),%RSI;(296) 
+0x3f8c8;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RBX;(296) 
+0x3f8cb;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:78;VMOVSD	%XMM4,(%R11,%RBX,8);(296) 
+0x3f8d1;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RSI;(296) 
+0x3f8d4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x78(%RSP),%R11;(296) 
+0x3f8d9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVSD	(%RCX),%XMM5;(296) 
+0x3f8dd;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%R11;(296) 
+0x3f8e0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:79;VMOVSD	%XMM5,(%R10,%RSI,8);(296) 
+0x3f8e6;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVSD	(%RDX),%XMM6;(296) 
+0x3f8ea;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:80;VMOVSD	%XMM6,(%R15,%R11,8);(296) 
+0x3f8f0;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x3c(%RSP),%ECX;(296) 
+0x3f8f4;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;INCQ	0x50(%RSP);(296) 
+0x3f8f9;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x50(%RSP),%R10;(296) 
+0x3f8fe;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;CMP	%R10D,0x38(%RSP);(296) 
+0x3f903;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JLE	3f920 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x460>;(296) 
+0x3f905;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x30(%RSP),%R15D;(296) 
+0x3f90a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOV	0x34(%RSP),%EDX;(296) 
+0x3f90e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;MOVL	$0,0x58(%RSP);(296) 
+0x3f916;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;SUB	%ECX,%R15D;(296) 
+0x3f919;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JMP	3f580 <_Z14generate_chunkiR16global_variables._omp_fn.0+0xc0>;(296) 
+0x3f91e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XCHG	%AX,%AX;
+0x3f920;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;VZEROUPPER;
+0x3f923;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;LEA	-0x28(%RBP),%RSP;
+0x3f927;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%RBX;
+0x3f928;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R12;
+0x3f92a;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R13;
+0x3f92c;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R14;
+0x3f92e;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%R15;
+0x3f930;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;POP	%RBP;
+0x3f931;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;RET;
+0x3f932;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;NOPW	(%RAX,%RAX,1);
+0x3f938;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x58(%RSP),%EAX;(296) 
+0x3f93c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%R12D,%R12D;(296) 
+0x3f93f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JMP	3f824 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x364>;(296) 
+0x3f944;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%R15D;
+0x3f947;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;XOR	%EDX,%EDX;
+0x3f949;/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp:74;JMP	3f526 <_Z14generate_chunkiR16global_variables._omp_fn.0+0x66>;
+0x3f94e;:0;XCHG	%AX,%AX;

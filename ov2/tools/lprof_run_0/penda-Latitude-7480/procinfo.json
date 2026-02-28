@@ -10,7 +10,7 @@
     "cpui_cache_size"    : "3072 KB",
     "cpui_cpu_cores"     : "2",
     "max_frequency"          : "3000000",
-    "cur_frequency"      : "2800049",
+    "cur_frequency"      : "2799992",
     "driver_frequency"   : "intel_pstate",
     "scaling_governor"   : "powersave",
     "huge_pages"         : "madvise",

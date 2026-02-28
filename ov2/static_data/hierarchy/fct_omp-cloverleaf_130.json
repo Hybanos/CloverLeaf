@@ -5,23 +5,31 @@
         {
           "_276":
             {
-              "src_regions":
-                [
-                  {
-                    "path": "/home/penda/aoc/CloverLeaf/src/omp/calc_dt.cpp",
-                    "regions":
-                      [
-                        [
-                        49,
-                        49
-                        ]
-                      ]
-                  }
-                ],
-              "src": "calc_dt.cpp:49-49"
-            },
-          "_277":
-            {
+              "_277":
+                {
+                  "src_regions":
+                    [
+                      {
+                        "path": "/home/penda/aoc/CloverLeaf/src/omp/calc_dt.cpp",
+                        "regions":
+                          [
+                            [
+                            55,
+                            56
+                            ],
+                            [
+                            62,
+                            79
+                            ],
+                            [
+                            92,
+                            92
+                            ]
+                          ]
+                      }
+                    ],
+                  "src": "calc_dt.cpp:55-92"
+                },
               "_278":
                 {
                   "src_regions":
@@ -31,37 +39,12 @@
                         "regions":
                           [
                             [
-                            53,
-                            54
+                            55,
+                            79
                             ],
                             [
-                            60,
-                            77
-                            ],
-                            [
-                            90,
-                            90
-                            ]
-                          ]
-                      }
-                    ],
-                  "src": "calc_dt.cpp:53-90"
-                },
-              "_279":
-                {
-                  "src_regions":
-                    [
-                      {
-                        "path": "/home/penda/aoc/CloverLeaf/src/omp/calc_dt.cpp",
-                        "regions":
-                          [
-                            [
-                            53,
-                            77
-                            ],
-                            [
-                            90,
-                            90
+                            92,
+                            92
                             ]
                           ]
                       },
@@ -80,7 +63,7 @@
                           ]
                       }
                     ],
-                  "src": "calc_dt.cpp:53-90"
+                  "src": "calc_dt.cpp:55-92"
                 },
               "src_regions":
                 [
@@ -89,12 +72,12 @@
                     "regions":
                       [
                         [
-                        49,
-                        77
+                        50,
+                        79
                         ],
                         [
-                        90,
-                        90
+                        92,
+                        92
                         ]
                       ]
                   },
@@ -113,7 +96,7 @@
                       ]
                   }
                 ],
-              "src": "calc_dt.cpp:49-90"
+              "src": "calc_dt.cpp:50-92"
             }
         }
     }

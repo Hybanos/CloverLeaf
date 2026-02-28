@@ -1,11 +1,11 @@
 {
   "report": [
     {
-      "id_str": "Loop 279 - omp-cloverleaf",
+      "id_str": "Loop 278 - omp-cloverleaf",
       "module": "omp-cloverleaf",
-      "id": 279,
-      "analysis": "Execution Time: 6 % - Vectorization Ratio: 52.84 % - Vector Length Use: 58.09 %",
-      "coverage": 6.3979034423828,
+      "id": 278,
+      "analysis": "Execution Time: 6 % - Vectorization Ratio: 53.15 % - Vector Length Use: 58.39 %",
+      "coverage": 6.4231014251709,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -20,7 +20,7 @@
         },
         {
           "id_str": "Data Access Issues",
-          "score": 487,
+          "score": 488,
           "issues": [
             {
               "code": "L2_DA_1",
@@ -29,8 +29,8 @@
             },
             {
               "code": "L2_DA_5",
-              "analysis": "[SA] Presence of special instructions executing on a single port (INSERT/EXTRACT, BLEND/MERGE, SHUFFLE/PERM, BROADCAST) - Simplify data access and try to get stride 1 access. There are 213 issues (= instructions) costing 1 point each.",
-              "score": 213,
+              "analysis": "[SA] Presence of special instructions executing on a single port (INSERT/EXTRACT, BLEND/MERGE, SHUFFLE/PERM, BROADCAST) - Simplify data access and try to get stride 1 access. There are 214 issues (= instructions) costing 1 point each.",
+              "score": 214,
             },
             {
               "code": "L2_DA_6",
@@ -52,12 +52,48 @@
         },
         {
           "id_str": "Inefficient Vectorization",
-          "score": 213,
+          "score": 214,
           "issues": [
             {
               "code": "L2_DA_5",
-              "analysis": "[SA] Presence of special instructions executing on a single port (INSERT/EXTRACT, BLEND/MERGE, SHUFFLE/PERM, BROADCAST) - Simplify data access and try to get stride 1 access. There are 213 issues (= instructions) costing 1 point each.",
-              "score": 213,
+              "analysis": "[SA] Presence of special instructions executing on a single port (INSERT/EXTRACT, BLEND/MERGE, SHUFFLE/PERM, BROADCAST) - Simplify data access and try to get stride 1 access. There are 214 issues (= instructions) costing 1 point each.",
+              "score": 214,
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_str": "Loop 354 - omp-cloverleaf",
+      "module": "omp-cloverleaf",
+      "id": 354,
+      "analysis": "Execution Time: 5 % - Vectorization Ratio: 100.00 % - Vector Length Use: 100.00 %",
+      "coverage": 5.2512288093567,
+      "issues": [
+        {
+          "id_str": "Loop Computation Issues",
+          "score": 12,
+          "issues": [
+            {
+              "code": "L2_LC_2",
+              "analysis": "[SA] Presence of expensive FP instructions - Perform hoisting, change algorithm, use SVML or proper numerical library or perform value profiling (count the number of distinct input values). There are 3 issues (= instructions) costing 4 points each.",
+              "score": 12,
+            }
+          ]
+        },
+        {
+          "id_str": "Data Access Issues",
+          "score": 2,
+          "issues": [
+            {
+              "code": "L2_DA_3",
+              "analysis": "[SA] Inefficient vectorization: more than 10% of the vector loads instructions are unaligned - When allocating arrays, don’t forget to align them. There are 0 issues ( = arrays) costing 2 points each",
+              "score": 0,
+            },
+            {
+              "code": "L2_DA_6",
+              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
+              "score": 2,
             }
           ]
         }
@@ -68,7 +104,7 @@
       "module": "omp-cloverleaf",
       "id": 236,
       "analysis": "Execution Time: 5 % - Vectorization Ratio: 65.65 % - Vector Length Use: 65.11 %",
-      "coverage": 5.2869529724121,
+      "coverage": 5.1473889350891,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -142,47 +178,11 @@
       ]
     },
     {
-      "id_str": "Loop 355 - omp-cloverleaf",
-      "module": "omp-cloverleaf",
-      "id": 355,
-      "analysis": "Execution Time: 4 % - Vectorization Ratio: 100.00 % - Vector Length Use: 100.00 %",
-      "coverage": 4.9596252441406,
-      "issues": [
-        {
-          "id_str": "Loop Computation Issues",
-          "score": 12,
-          "issues": [
-            {
-              "code": "L2_LC_2",
-              "analysis": "[SA] Presence of expensive FP instructions - Perform hoisting, change algorithm, use SVML or proper numerical library or perform value profiling (count the number of distinct input values). There are 3 issues (= instructions) costing 4 points each.",
-              "score": 12,
-            }
-          ]
-        },
-        {
-          "id_str": "Data Access Issues",
-          "score": 2,
-          "issues": [
-            {
-              "code": "L2_DA_3",
-              "analysis": "[SA] Inefficient vectorization: more than 10% of the vector loads instructions are unaligned - When allocating arrays, don’t forget to align them. There are 0 issues ( = arrays) costing 2 points each",
-              "score": 0,
-            },
-            {
-              "code": "L2_DA_6",
-              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id_str": "Loop 216 - omp-cloverleaf",
       "module": "omp-cloverleaf",
       "id": 216,
       "analysis": "Execution Time: 4 % - Vectorization Ratio: 100.00 % - Vector Length Use: 100.00 %",
-      "coverage": 4.1958432197571,
+      "coverage": 4.2029623985291,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -223,7 +223,7 @@
       "module": "omp-cloverleaf",
       "id": 262,
       "analysis": "Execution Time: 3 % - Vectorization Ratio: 15.79 % - Vector Length Use: 28.95 %",
-      "coverage": 3.9280235767365,
+      "coverage": 3.9952869415283,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -293,11 +293,47 @@
       ]
     },
     {
-      "id_str": "Loop 683 - omp-cloverleaf",
+      "id_str": "Loop 352 - omp-cloverleaf",
       "module": "omp-cloverleaf",
-      "id": 683,
+      "id": 352,
+      "analysis": "Execution Time: 3 % - Vectorization Ratio: 100.00 % - Vector Length Use: 100.00 %",
+      "coverage": 3.8420023918152,
+      "issues": [
+        {
+          "id_str": "Loop Computation Issues",
+          "score": 12,
+          "issues": [
+            {
+              "code": "L2_LC_2",
+              "analysis": "[SA] Presence of expensive FP instructions - Perform hoisting, change algorithm, use SVML or proper numerical library or perform value profiling (count the number of distinct input values). There are 3 issues (= instructions) costing 4 points each.",
+              "score": 12,
+            }
+          ]
+        },
+        {
+          "id_str": "Data Access Issues",
+          "score": 2,
+          "issues": [
+            {
+              "code": "L2_DA_3",
+              "analysis": "[SA] Inefficient vectorization: more than 10% of the vector loads instructions are unaligned - When allocating arrays, don’t forget to align them. There are 0 issues ( = arrays) costing 2 points each",
+              "score": 0,
+            },
+            {
+              "code": "L2_DA_6",
+              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
+              "score": 2,
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id_str": "Loop 682 - omp-cloverleaf",
+      "module": "omp-cloverleaf",
+      "id": 682,
       "analysis": "Execution Time: 3 % - Vectorization Ratio: 94.74 % - Vector Length Use: 96.05 %",
-      "coverage": 3.7891540527344,
+      "coverage": 3.7777216434479,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -365,7 +401,7 @@
       "module": "omp-cloverleaf",
       "id": 233,
       "analysis": "Execution Time: 3 % - Vectorization Ratio: 57.91 % - Vector Length Use: 61.70 %",
-      "coverage": 3.7147595882416,
+      "coverage": 3.6788284778595,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -444,47 +480,11 @@
       ]
     },
     {
-      "id_str": "Loop 353 - omp-cloverleaf",
+      "id_str": "Loop 305 - omp-cloverleaf",
       "module": "omp-cloverleaf",
-      "id": 353,
+      "id": 305,
       "analysis": "Execution Time: 3 % - Vectorization Ratio: 100.00 % - Vector Length Use: 100.00 %",
-      "coverage": 3.6254863739014,
-      "issues": [
-        {
-          "id_str": "Loop Computation Issues",
-          "score": 12,
-          "issues": [
-            {
-              "code": "L2_LC_2",
-              "analysis": "[SA] Presence of expensive FP instructions - Perform hoisting, change algorithm, use SVML or proper numerical library or perform value profiling (count the number of distinct input values). There are 3 issues (= instructions) costing 4 points each.",
-              "score": 12,
-            }
-          ]
-        },
-        {
-          "id_str": "Data Access Issues",
-          "score": 2,
-          "issues": [
-            {
-              "code": "L2_DA_3",
-              "analysis": "[SA] Inefficient vectorization: more than 10% of the vector loads instructions are unaligned - When allocating arrays, don’t forget to align them. There are 0 issues ( = arrays) costing 2 points each",
-              "score": 0,
-            },
-            {
-              "code": "L2_DA_6",
-              "analysis": "[SA] More than 20% of the loads are accessing the stack - Perform loop splitting to decrease pressure on registers. This issue costs 2 points.",
-              "score": 2,
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id_str": "Loop 306 - omp-cloverleaf",
-      "module": "omp-cloverleaf",
-      "id": 306,
-      "analysis": "Execution Time: 3 % - Vectorization Ratio: 100.00 % - Vector Length Use: 100.00 %",
-      "coverage": 3.2733528614044,
+      "coverage": 3.4068717956543,
       "issues": [
         {
           "id_str": "Loop Computation Issues",
@@ -520,7 +520,7 @@
       "module": "omp-cloverleaf",
       "id": 259,
       "analysis": "Execution Time: 3 % - Vectorization Ratio: 16.67 % - Vector Length Use: 29.17 %",
-      "coverage": 3.1394429206848,
+      "coverage": 3.1497495174408,
       "issues": [
         {
           "id_str": "Loop Computation Issues",

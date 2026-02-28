@@ -5,16 +5,16 @@
       "status": "good",
       "score": 4,
       "max_score": 4,
-      "text": "Application profile is long enough (25.38 s)",
+      "text": "Application profile is long enough (25.69 s)",
       "desc": "To have good quality measurements, it is advised that the application profiling time is greater than 10 seconds."
     },
     {
       "name": "lvl0_utilitary_options",
       "status": "warning",
-      "score": 2.3976342241479,
+      "score": 2.3972753065511,
       "max_score": 3,
       "text": "Most of time spent in analyzed modules comes from functions without compilation information",
-      "desc": "Functions without compilation information (typically not compiled with -g) cumulate 0.10% of the time spent in analyzed modules. Check that -g is present.\nRemark: if -g is indeed used, this can also be due to some compiler built-in functions (typically math) or statically linked libraries. This warning can be ignored in that case."
+      "desc": "Functions without compilation information (typically not compiled with -g) cumulate 0.11% of the time spent in analyzed modules. Check that -g is present.\nRemark: if -g is indeed used, this can also be due to some compiler built-in functions (typically math) or statically linked libraries. This warning can be ignored in that case."
     },
     {
       "name": "lvl0_optimization_level",
@@ -35,7 +35,7 @@
     {
       "name": "lvl0_architecture_options",
       "status": "good",
-      "score": 2.9970427801849,
+      "score": 2.9965941331888,
       "max_score": 3,
       "text": "Architecture specific option -march=skylake is used",
       "desc": ""

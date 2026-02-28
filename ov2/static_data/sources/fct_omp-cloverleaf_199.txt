@@ -1,0 +1,11 @@
+/home/penda/aoc/CloverLeaf/src/omp/update_halo.cpp: 107 - 110
+--------------------------------------------------------------------------------
+
+107: #pragma omp parallel for simd
+108:       for (int k = (y_min - depth + 1); k < (y_max + depth + 2); k++) {
+109:         for (int j = 0; j < depth; ++j) {
+110:           field.density1(1 - j, k) = field.density1(2 + j, k);
+/home/penda/aoc/CloverLeaf/src/omp/context.h: 69 - 69
+--------------------------------------------------------------------------------
+
+69:   T &operator()(size_t i, size_t j) const { return data[i + j * sizeX]; }

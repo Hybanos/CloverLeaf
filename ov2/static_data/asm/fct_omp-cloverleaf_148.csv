@@ -1,299 +1,299 @@
 address;source_location;insn;indent
-0x412c0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;ENDBR64;
-0x412c4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%RBP;
-0x412c5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;MOV	%RSP,%RBP;
-0x412c8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R15;
-0x412ca;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R14;
-0x412cc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R13;
-0x412ce;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R12;
-0x412d0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%RBX;
-0x412d1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;AND	$-0x20,%RSP;
-0x412d5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;SUB	$0x60,%RSP;
-0x412d9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;MOV	0x28(%RDI),%EAX;
-0x412dc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;MOV	0x2c(%RDI),%EDX;
-0x412df;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x20(%RDI),%EBX;
-0x412e2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x24(%RDI),%ECX;
-0x412e5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;ADD	$0x2,%EDX;
-0x412e8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;LEA	0x1(%RAX),%R15D;
-0x412ec;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;LEA	0x1(%RBX),%ESI;
-0x412ef;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;MOV	%EDX,0x38(%RSP);
-0x412f3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%ESI,0x34(%RSP);
-0x412f7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%EDX,%R15D;
-0x412fa;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JGE	4176b <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4ab>;
-0x41300;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EDX,%EBX;
-0x41302;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;LEA	0x2(%RCX),%R14D;
-0x41306;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;SUB	%R15D,%EBX;
-0x41309;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%R14D,%ESI;
-0x4130c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JGE	4176b <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4ab>;
-0x41312;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%RDI,%R13;
-0x41315;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%R14D,%EDI;
-0x41318;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;SUB	%ESI,%EDI;
-0x4131a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EDI,0x3c(%RSP);
-0x4131e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CALL	3b00 <.plt.sec@start+0x530>;
-0x41323;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EAX,%R12D;
-0x41326;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CALL	39f0 <.plt.sec@start+0x420>;
-0x4132b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;XOR	%EDX,%EDX;
-0x4132d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EAX,%EDI;
-0x4132f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x3c(%RSP),%EAX;
-0x41333;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;IMUL	%EBX,%EAX;
-0x41336;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;DIV	%R12D;
-0x41339;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EAX,%ESI;
-0x4133b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%EDX,%EDI;
-0x4133d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JB	4179c <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4dc>;
-0x41343;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;IMUL	%ESI,%EDI;
-0x41346;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;ADD	%EDX,%EDI;
-0x41348;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;LEA	(%RSI,%RDI,1),%R8D;
-0x4134c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%R8D,0x30(%RSP);
-0x41351;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%R8D,%EDI;
-0x41354;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JAE	4176b <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4ab>;
-0x4135a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EDI,%EAX;
-0x4135c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;XOR	%EDX,%EDX;
-0x4135e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x34(%RSP),%R9D;
-0x41363;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	(%R13),%R11;
-0x41367;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;DIVL	0x3c(%RSP);
-0x4136b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x18(%R13),%RBX;
-0x4136f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVSD	0x30b31(%RIP),%XMM7;
-0x41377;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVSD	0x30b81(%RIP),%XMM6;
-0x4137f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMOVSD	0x30b81(%RIP),%XMM5;
-0x41387;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	%R11,0x28(%RSP);
-0x4138c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	%RBX,0x10(%RSP);
-0x41391;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVDDUP	%XMM7,%XMM10;
-0x41395;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVDDUP	%XMM6,%XMM9;
-0x41399;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMOVDDUP	%XMM5,%XMM8;
-0x4139d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VBROADCASTSD	%XMM7,%YMM4;
-0x413a2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VBROADCASTSD	%XMM6,%YMM3;
-0x413a7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VBROADCASTSD	%XMM5,%YMM2;
-0x413ac;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;LEA	(%RAX,%R15,1),%R10D;
-0x413b0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;MOV	%R14D,%EAX;
-0x413b3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	0x8(%R13),%R15;
-0x413b7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	0x10(%R13),%R14;
-0x413bb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%EDX,%R9D;
-0x413be;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOVSXD	%R10D,%R8;
-0x413c1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R9D,0x4c(%RSP);
-0x413c6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;SUB	%R9D,%EAX;
-0x413c9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R15,0x20(%RSP);
-0x413ce;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R14,0x18(%RSP);
-0x413d3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;NOPL	(%RAX,%RAX,1);
-0x413d8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;CMP	%EAX,%ESI;(305) 
-0x413da;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;CMOVA	%EAX,%ESI;(305) 
-0x413dd;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;LEA	(%RDI,%RSI,1),%R13D;(305) 
-0x413e1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R13D,0x48(%RSP);(305) 
-0x413e6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;CMP	%R13D,%EDI;(305) 
-0x413e9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;JAE	4173e <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x47e>;(305) 
-0x413ef;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x18(%RSP),%RAX;(305) 
-0x413f4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RSP),%R9;(305) 
-0x413f9;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	-0x1(%RSI),%R15D;(305) 
-0x413fd;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x28(%RSP),%RCX;(305) 
-0x41402;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x20(%RSP),%RDI;(305) 
-0x41407;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%RAX),%R14;(305) 
-0x4140a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%R9),%R13;(305) 
-0x4140d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RCX),%R12;(305) 
-0x41411;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%RDI),%RDX;(305) 
-0x41414;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%R14;(305) 
-0x41418;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%RCX),%RCX;(305) 
-0x4141b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RDI),%RBX;(305) 
-0x4141f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%R13;(305) 
-0x41423;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RAX),%R11;(305) 
-0x41427;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%R9),%R10;(305) 
-0x4142b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%RCX;(305) 
-0x4142f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%RDX;(305) 
-0x41433;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R14,0x50(%RSP);(305) 
-0x41438;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R13,0x58(%RSP);(305) 
-0x4143d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%R15D;(305) 
-0x41441;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JBE	41790 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4d0>;(305) 
-0x41447;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%ESI,%R9D;(305) 
-0x4144a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOVSXD	0x4c(%RSP),%RAX;(305) 
-0x4144f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x2,%R9D;(305) 
-0x41453;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SAL	$0x5,%R9;(305) 
-0x41457;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RCX,%RAX,1),%RDI;(305) 
-0x4145b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RDX,%RAX,1),%R15;(305) 
-0x4145f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x40(%RSP);(305) 
-0x41464;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SUB	$0x20,%R9;(305) 
-0x41468;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R14,%RAX,1),%R14;(305) 
-0x4146c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%R13,%RAX;(305) 
-0x4146f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x5,%R9;(305) 
-0x41473;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R10,%RAX,8),%R13;(305) 
-0x41477;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R12,%RDI,8),%RDI;(305) 
-0x4147b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%EAX,%EAX;(305) 
-0x4147d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%R9;(305) 
-0x41480;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RBX,%R15,8),%R15;(305) 
-0x41484;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R11,%R14,8),%R14;(305) 
-0x41488;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;AND	$0x3,%R9D;(305) 
-0x4148c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	41780 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4c0>;(305) 
-0x41492;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x1,%R9;(305) 
-0x41496;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	41511 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x251>;(305) 
-0x41498;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%R9;(305) 
-0x4149c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	414d6 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x216>;(305) 
-0x4149e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI),%YMM1;(305) 
-0x414a2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	$0x20,%EAX;(305) 
-0x414a7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM1,%YMM4,%YMM11;(305) 
-0x414ab;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15),%YMM1,%YMM0;(305) 
-0x414b0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM0,%YMM12;(305) 
-0x414b4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM12,(%R14);(305) 
-0x414b9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI),%YMM2,%YMM13;(305) 
-0x414bd;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM11,%YMM14;(305) 
-0x414c2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM14,%YMM13,%YMM15;(305) 
-0x414c7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM15,%YMM1;(305) 
-0x414cc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM1,%YMM11;(305) 
-0x414d0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM11,(%R13);(305) 
-0x414d6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI,%RAX,1),%YMM0;(305) 
-0x414db;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM0,%YMM4,%YMM12;(305) 
-0x414df;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15,%RAX,1),%YMM0,%YMM13;(305) 
-0x414e5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM13,%YMM14;(305) 
-0x414e9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM14,(%R14,%RAX,1);(305) 
-0x414ef;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI,%RAX,1),%YMM2,%YMM15;(305) 
-0x414f4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM12,%YMM1;(305) 
-0x414f9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM1,%YMM15,%YMM11;(305) 
-0x414fd;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM14,%YMM11,%YMM0;(305) 
-0x41502;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM0,%YMM12;(305) 
-0x41506;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM12,(%R13,%RAX,1);(305) 
-0x4150d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	$0x20,%RAX;(305) 
-0x41511;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI,%RAX,1),%YMM13;(305) 
-0x41516;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	0x40(%RSP),%R9;(305) 
-0x4151b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM13,%YMM4,%YMM14;(305) 
-0x41520;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15,%RAX,1),%YMM13,%YMM15;(305) 
-0x41526;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM15,%YMM1;(305) 
-0x4152a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM1,(%R14,%RAX,1);(305) 
-0x41530;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI,%RAX,1),%YMM2,%YMM0;(305) 
-0x41535;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM14,%YMM14,%YMM11;(305) 
-0x4153a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM0,%YMM12;(305) 
-0x4153f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM1,%YMM12,%YMM13;(305) 
-0x41543;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM13,%YMM14;(305) 
-0x41548;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM14,(%R13,%RAX,1);(305) 
-0x4154f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	$0x20,%RAX;(305) 
-0x41553;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	%R9,%RAX;(305) 
-0x41556;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	41659 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x399>;(305) 
-0x4155c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI,%RAX,1),%YMM15;  (306) 
-0x41561;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM15,%YMM4,%YMM11;  (306) 
-0x41566;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15,%RAX,1),%YMM15,%YMM1;  (306) 
-0x4156c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM1,%YMM12;  (306) 
-0x41570;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM12,(%R14,%RAX,1);  (306) 
-0x41576;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI,%RAX,1),%YMM2,%YMM0;  (306) 
-0x4157b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM11,%YMM13;  (306) 
-0x41580;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM13,%YMM0,%YMM14;  (306) 
-0x41585;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM14,%YMM15;  (306) 
-0x4158a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM15,%YMM11;  (306) 
-0x4158f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM11,(%R13,%RAX,1);  (306) 
-0x41596;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	0x20(%RDI,%RAX,1),%YMM1;  (306) 
-0x4159c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM1,%YMM4,%YMM12;  (306) 
-0x415a0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	0x20(%R15,%RAX,1),%YMM1,%YMM0;  (306) 
-0x415a7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM0,%YMM13;  (306) 
-0x415ab;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM13,0x20(%R14,%RAX,1);  (306) 
-0x415b2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	0x20(%RDI,%RAX,1),%YMM2,%YMM14;  (306) 
-0x415b8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM12,%YMM15;  (306) 
-0x415bd;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM15,%YMM14,%YMM11;  (306) 
-0x415c2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM13,%YMM11,%YMM1;  (306) 
-0x415c7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM1,%YMM12;  (306) 
-0x415cb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM12,0x20(%R13,%RAX,1);  (306) 
-0x415d2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	0x40(%RDI,%RAX,1),%YMM0;  (306) 
-0x415d8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM0,%YMM4,%YMM13;  (306) 
-0x415dc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	0x40(%R15,%RAX,1),%YMM0,%YMM14;  (306) 
-0x415e3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM14,%YMM15;  (306) 
-0x415e7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM15,0x40(%R14,%RAX,1);  (306) 
-0x415ee;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	0x40(%RDI,%RAX,1),%YMM2,%YMM1;  (306) 
-0x415f4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM13,%YMM13,%YMM11;  (306) 
-0x415f9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM1,%YMM12;  (306) 
-0x415fe;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM15,%YMM12,%YMM0;  (306) 
-0x41603;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM0,%YMM13;  (306) 
-0x41607;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM13,0x40(%R13,%RAX,1);  (306) 
-0x4160e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	0x60(%RDI,%RAX,1),%YMM14;  (306) 
-0x41614;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM14,%YMM4,%YMM15;  (306) 
-0x41619;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	0x60(%R15,%RAX,1),%YMM14,%YMM1;  (306) 
-0x41620;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM1,%YMM12;  (306) 
-0x41624;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM12,0x60(%R14,%RAX,1);  (306) 
-0x4162b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	0x60(%RDI,%RAX,1),%YMM2,%YMM0;  (306) 
-0x41631;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM15,%YMM15,%YMM11;  (306) 
-0x41636;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM0,%YMM13;  (306) 
-0x4163b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM13,%YMM14;  (306) 
-0x41640;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM14,%YMM15;  (306) 
-0x41645;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM15,0x60(%R13,%RAX,1);  (306) 
-0x4164c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;SUB	$-0x80,%RAX;  (306) 
-0x41650;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	%R9,%RAX;  (306) 
-0x41653;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JNE	4155c <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x29c>;  (306) 
-0x41659;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x4c(%RSP),%EAX;(305) 
-0x4165d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	%ESI,%R9D;(305) 
-0x41660;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;AND	$-0x4,%R9D;(305) 
-0x41664;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	%R9D,%EAX;(305) 
-0x41667;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;TEST	$0x3,%SIL;(305) 
-0x4166b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	4173a <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x47a>;(305) 
-0x41671;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;SUB	%R9D,%ESI;(305) 
-0x41674;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	$0x1,%ESI;(305) 
-0x41677;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	416ea <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x42a>;(305) 
-0x41679;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOVSXD	0x4c(%RSP),%RDI;(305) 
-0x4167e;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x58(%RSP),%R14;(305) 
-0x41683;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RCX,%RDI,1),%R15;(305) 
-0x41687;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R14,%RDI,1),%R13;(305) 
-0x4168b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%R9,%R15;(305) 
-0x4168e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;LEA	(%RDX,%RDI,1),%R14;(305) 
-0x41692;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R9,%R13;(305) 
-0x41695;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;LEA	(%R12,%R15,8),%R15;(305) 
-0x41699;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R9,%R14;(305) 
-0x4169c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%R15),%XMM1;(305) 
-0x416a1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%XMM1,%XMM10,%XMM12;(305) 
-0x416a5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%RBX,%R14,8),%XMM1,%XMM0;(305) 
-0x416ab;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	0x50(%RSP),%R14;(305) 
-0x416b0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R14,%RDI;(305) 
-0x416b3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R9,%RDI;(305) 
-0x416b6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%XMM9,%XMM0,%XMM13;(305) 
-0x416bb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%XMM13,(%R11,%RDI,8);(305) 
-0x416c1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%R15),%XMM8,%XMM14;(305) 
-0x416c6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%XMM12,%XMM12,%XMM11;(305) 
-0x416cb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%XMM11,%XMM14,%XMM15;(305) 
-0x416d0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%XMM13,%XMM15,%XMM1;(305) 
-0x416d5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%XMM1,%XMM12;(305) 
-0x416d9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%XMM12,(%R10,%R13,8);(305) 
-0x416df;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;TEST	$0x1,%SIL;(305) 
-0x416e3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	4173a <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x47a>;(305) 
-0x416e5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;AND	$-0x2,%ESI;(305) 
-0x416e8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	%ESI,%EAX;(305) 
-0x416ea;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;CLTQ;(305) 
-0x416ec;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RCX;(305) 
-0x416ef;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RDX;(305) 
-0x416f2;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R12,%RCX,8),%RSI;(305) 
-0x416f6;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x50(%RSP),%R12;(305) 
-0x416fb;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x58(%RSP),%RCX;(305) 
-0x41700;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVSD	(%RSI),%XMM0;(305) 
-0x41704;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%R12;(305) 
-0x41707;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RCX;(305) 
-0x4170a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVSD	%XMM0,%XMM7,%XMM13;(305) 
-0x4170e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULSD	(%RBX,%RDX,8),%XMM0,%XMM14;(305) 
-0x41713;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULSD	%XMM6,%XMM14,%XMM15;(305) 
-0x41717;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVSD	%XMM15,(%R11,%R12,8);(305) 
-0x4171d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	(%RSI),%XMM5,%XMM1;(305) 
-0x41721;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	%XMM13,%XMM13,%XMM11;(305) 
-0x41726;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	%XMM11,%XMM1,%XMM12;(305) 
-0x4172b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	%XMM15,%XMM12,%XMM0;(305) 
-0x41730;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTSD	%XMM0,%XMM0,%XMM0;(305) 
-0x41734;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVSD	%XMM0,(%R10,%RCX,8);(305) 
-0x4173a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x48(%RSP),%EDI;(305) 
-0x4173e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;INC	%R8;(305) 
-0x41741;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;LEA	(%R8),%EDX;(305) 
-0x41744;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	%EDX,0x38(%RSP);(305) 
-0x41748;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JLE	41768 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4a8>;(305) 
-0x4174a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x30(%RSP),%ESI;(305) 
-0x4174e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x34(%RSP),%R11D;(305) 
-0x41753;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x3c(%RSP),%EAX;(305) 
-0x41757;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%R11D,0x4c(%RSP);(305) 
-0x4175c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;SUB	%EDI,%ESI;(305) 
-0x4175e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JMP	413d8 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x118>;(305) 
-0x41763;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;NOPL	(%RAX,%RAX,1);
-0x41768;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;VZEROUPPER;
-0x4176b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;LEA	-0x28(%RBP),%RSP;
-0x4176f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%RBX;
-0x41770;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R12;
-0x41772;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R13;
-0x41774;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R14;
-0x41776;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R15;
-0x41778;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%RBP;
-0x41779;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;RET;
-0x4177a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;NOPW	(%RAX,%RAX,1);
-0x41780;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;MOV	0x40(%RSP),%R9;(305) 
-0x41785;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;JMP	4155c <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x29c>;(305) 
-0x4178a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;NOPW	(%RAX,%RAX,1);
-0x41790;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x4c(%RSP),%EAX;(305) 
-0x41794;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%R9D,%R9D;(305) 
-0x41797;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JMP	41671 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x3b1>;(305) 
-0x4179c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%ESI;
-0x4179e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;XOR	%EDX,%EDX;
-0x417a0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JMP	41343 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x83>;
-0x417a5;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x411f0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;ENDBR64;
+0x411f4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%RBP;
+0x411f5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;MOV	%RSP,%RBP;
+0x411f8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R15;
+0x411fa;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R14;
+0x411fc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R13;
+0x411fe;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%R12;
+0x41200;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;PUSH	%RBX;
+0x41201;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;AND	$-0x20,%RSP;
+0x41205;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;SUB	$0x60,%RSP;
+0x41209;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;MOV	0x28(%RDI),%EAX;
+0x4120c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;MOV	0x2c(%RDI),%EDX;
+0x4120f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x20(%RDI),%EBX;
+0x41212;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x24(%RDI),%ECX;
+0x41215;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;ADD	$0x2,%EDX;
+0x41218;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;LEA	0x1(%RAX),%R15D;
+0x4121c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;LEA	0x1(%RBX),%ESI;
+0x4121f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:38;MOV	%EDX,0x38(%RSP);
+0x41223;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%ESI,0x34(%RSP);
+0x41227;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%EDX,%R15D;
+0x4122a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JGE	4169b <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4ab>;
+0x41230;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EDX,%EBX;
+0x41232;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;LEA	0x2(%RCX),%R14D;
+0x41236;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;SUB	%R15D,%EBX;
+0x41239;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%R14D,%ESI;
+0x4123c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JGE	4169b <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4ab>;
+0x41242;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%RDI,%R13;
+0x41245;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%R14D,%EDI;
+0x41248;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;SUB	%ESI,%EDI;
+0x4124a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EDI,0x3c(%RSP);
+0x4124e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CALL	3b00 <.plt.sec@start+0x530>;
+0x41253;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EAX,%R12D;
+0x41256;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CALL	39f0 <.plt.sec@start+0x420>;
+0x4125b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;XOR	%EDX,%EDX;
+0x4125d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EAX,%EDI;
+0x4125f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x3c(%RSP),%EAX;
+0x41263;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;IMUL	%EBX,%EAX;
+0x41266;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;DIV	%R12D;
+0x41269;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EAX,%ESI;
+0x4126b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%EDX,%EDI;
+0x4126d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JB	416cc <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4dc>;
+0x41273;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;IMUL	%ESI,%EDI;
+0x41276;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;ADD	%EDX,%EDI;
+0x41278;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;LEA	(%RSI,%RDI,1),%R8D;
+0x4127c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%R8D,0x30(%RSP);
+0x41281;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;CMP	%R8D,%EDI;
+0x41284;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JAE	4169b <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4ab>;
+0x4128a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%EDI,%EAX;
+0x4128c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;XOR	%EDX,%EDX;
+0x4128e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x34(%RSP),%R9D;
+0x41293;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	(%R13),%R11;
+0x41297;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;DIVL	0x3c(%RSP);
+0x4129b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x18(%R13),%RBX;
+0x4129f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVSD	0x30c21(%RIP),%XMM7;
+0x412a7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVSD	0x30c69(%RIP),%XMM6;
+0x412af;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMOVSD	0x30c69(%RIP),%XMM5;
+0x412b7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	%R11,0x28(%RSP);
+0x412bc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	%RBX,0x10(%RSP);
+0x412c1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVDDUP	%XMM7,%XMM10;
+0x412c5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVDDUP	%XMM6,%XMM9;
+0x412c9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMOVDDUP	%XMM5,%XMM8;
+0x412cd;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VBROADCASTSD	%XMM7,%YMM4;
+0x412d2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VBROADCASTSD	%XMM6,%YMM3;
+0x412d7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VBROADCASTSD	%XMM5,%YMM2;
+0x412dc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;LEA	(%RAX,%R15,1),%R10D;
+0x412e0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;MOV	%R14D,%EAX;
+0x412e3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	0x8(%R13),%R15;
+0x412e7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	0x10(%R13),%R14;
+0x412eb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%EDX,%R9D;
+0x412ee;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOVSXD	%R10D,%R8;
+0x412f1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R9D,0x4c(%RSP);
+0x412f6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;SUB	%R9D,%EAX;
+0x412f9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R15,0x20(%RSP);
+0x412fe;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R14,0x18(%RSP);
+0x41303;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;NOPL	(%RAX,%RAX,1);
+0x41308;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;CMP	%EAX,%ESI;(304) 
+0x4130a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;CMOVA	%EAX,%ESI;(304) 
+0x4130d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;LEA	(%RDI,%RSI,1),%R13D;(304) 
+0x41311;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	%R13D,0x48(%RSP);(304) 
+0x41316;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;CMP	%R13D,%EDI;(304) 
+0x41319;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;JAE	4166e <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x47e>;(304) 
+0x4131f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x18(%RSP),%RAX;(304) 
+0x41324;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RSP),%R9;(304) 
+0x41329;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	-0x1(%RSI),%R15D;(304) 
+0x4132d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x28(%RSP),%RCX;(304) 
+0x41332;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x20(%RSP),%RDI;(304) 
+0x41337;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%RAX),%R14;(304) 
+0x4133a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%R9),%R13;(304) 
+0x4133d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RCX),%R12;(304) 
+0x41341;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%RDI),%RDX;(304) 
+0x41344;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%R14;(304) 
+0x41348;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	(%RCX),%RCX;(304) 
+0x4134b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RDI),%RBX;(304) 
+0x4134f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%R13;(304) 
+0x41353;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%RAX),%R11;(304) 
+0x41357;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x10(%R9),%R10;(304) 
+0x4135b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%RCX;(304) 
+0x4135f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;IMUL	%R8,%RDX;(304) 
+0x41363;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R14,0x50(%RSP);(304) 
+0x41368;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R13,0x58(%RSP);(304) 
+0x4136d;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%R15D;(304) 
+0x41371;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JBE	416c0 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4d0>;(304) 
+0x41377;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%ESI,%R9D;(304) 
+0x4137a;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOVSXD	0x4c(%RSP),%RAX;(304) 
+0x4137f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x2,%R9D;(304) 
+0x41383;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SAL	$0x5,%R9;(304) 
+0x41387;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RCX,%RAX,1),%RDI;(304) 
+0x4138b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RDX,%RAX,1),%R15;(304) 
+0x4138f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	%R9,0x40(%RSP);(304) 
+0x41394;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SUB	$0x20,%R9;(304) 
+0x41398;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R14,%RAX,1),%R14;(304) 
+0x4139c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%R13,%RAX;(304) 
+0x4139f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;SHR	$0x5,%R9;(304) 
+0x413a3;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R10,%RAX,8),%R13;(304) 
+0x413a7;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R12,%RDI,8),%RDI;(304) 
+0x413ab;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%EAX,%EAX;(304) 
+0x413ad;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%R9;(304) 
+0x413b0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RBX,%R15,8),%R15;(304) 
+0x413b4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R11,%R14,8),%R14;(304) 
+0x413b8;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;AND	$0x3,%R9D;(304) 
+0x413bc;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	416b0 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4c0>;(304) 
+0x413c2;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x1,%R9;(304) 
+0x413c6;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	41441 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x251>;(304) 
+0x413c8;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;CMP	$0x2,%R9;(304) 
+0x413cc;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JE	41406 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x216>;(304) 
+0x413ce;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI),%YMM1;(304) 
+0x413d2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	$0x20,%EAX;(304) 
+0x413d7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM1,%YMM4,%YMM11;(304) 
+0x413db;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15),%YMM1,%YMM0;(304) 
+0x413e0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM0,%YMM12;(304) 
+0x413e4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM12,(%R14);(304) 
+0x413e9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI),%YMM2,%YMM13;(304) 
+0x413ed;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM11,%YMM14;(304) 
+0x413f2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM14,%YMM13,%YMM15;(304) 
+0x413f7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM15,%YMM1;(304) 
+0x413fc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM1,%YMM11;(304) 
+0x41400;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM11,(%R13);(304) 
+0x41406;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI,%RAX,1),%YMM0;(304) 
+0x4140b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM0,%YMM4,%YMM12;(304) 
+0x4140f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15,%RAX,1),%YMM0,%YMM13;(304) 
+0x41415;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM13,%YMM14;(304) 
+0x41419;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM14,(%R14,%RAX,1);(304) 
+0x4141f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI,%RAX,1),%YMM2,%YMM15;(304) 
+0x41424;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM12,%YMM1;(304) 
+0x41429;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM1,%YMM15,%YMM11;(304) 
+0x4142d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM14,%YMM11,%YMM0;(304) 
+0x41432;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM0,%YMM12;(304) 
+0x41436;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM12,(%R13,%RAX,1);(304) 
+0x4143d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	$0x20,%RAX;(304) 
+0x41441;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI,%RAX,1),%YMM13;(304) 
+0x41446;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;MOV	0x40(%RSP),%R9;(304) 
+0x4144b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM13,%YMM4,%YMM14;(304) 
+0x41450;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15,%RAX,1),%YMM13,%YMM15;(304) 
+0x41456;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM15,%YMM1;(304) 
+0x4145a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM1,(%R14,%RAX,1);(304) 
+0x41460;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI,%RAX,1),%YMM2,%YMM0;(304) 
+0x41465;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM14,%YMM14,%YMM11;(304) 
+0x4146a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM0,%YMM12;(304) 
+0x4146f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM1,%YMM12,%YMM13;(304) 
+0x41473;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM13,%YMM14;(304) 
+0x41478;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM14,(%R13,%RAX,1);(304) 
+0x4147f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	$0x20,%RAX;(304) 
+0x41483;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	%R9,%RAX;(304) 
+0x41486;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	41589 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x399>;(304) 
+0x4148c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%RDI,%RAX,1),%YMM15;  (305) 
+0x41491;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM15,%YMM4,%YMM11;  (305) 
+0x41496;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%R15,%RAX,1),%YMM15,%YMM1;  (305) 
+0x4149c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM1,%YMM12;  (305) 
+0x414a0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM12,(%R14,%RAX,1);  (305) 
+0x414a6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%RDI,%RAX,1),%YMM2,%YMM0;  (305) 
+0x414ab;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM11,%YMM13;  (305) 
+0x414b0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM13,%YMM0,%YMM14;  (305) 
+0x414b5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM14,%YMM15;  (305) 
+0x414ba;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM15,%YMM11;  (305) 
+0x414bf;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM11,(%R13,%RAX,1);  (305) 
+0x414c6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	0x20(%RDI,%RAX,1),%YMM1;  (305) 
+0x414cc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM1,%YMM4,%YMM12;  (305) 
+0x414d0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	0x20(%R15,%RAX,1),%YMM1,%YMM0;  (305) 
+0x414d7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM0,%YMM13;  (305) 
+0x414db;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM13,0x20(%R14,%RAX,1);  (305) 
+0x414e2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	0x20(%RDI,%RAX,1),%YMM2,%YMM14;  (305) 
+0x414e8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM12,%YMM15;  (305) 
+0x414ed;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM15,%YMM14,%YMM11;  (305) 
+0x414f2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM13,%YMM11,%YMM1;  (305) 
+0x414f7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM1,%YMM12;  (305) 
+0x414fb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM12,0x20(%R13,%RAX,1);  (305) 
+0x41502;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	0x40(%RDI,%RAX,1),%YMM0;  (305) 
+0x41508;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM0,%YMM4,%YMM13;  (305) 
+0x4150c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	0x40(%R15,%RAX,1),%YMM0,%YMM14;  (305) 
+0x41513;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM14,%YMM15;  (305) 
+0x41517;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM15,0x40(%R14,%RAX,1);  (305) 
+0x4151e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	0x40(%RDI,%RAX,1),%YMM2,%YMM1;  (305) 
+0x41524;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM13,%YMM13,%YMM11;  (305) 
+0x41529;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM1,%YMM12;  (305) 
+0x4152e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM15,%YMM12,%YMM0;  (305) 
+0x41533;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM0,%YMM13;  (305) 
+0x41537;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM13,0x40(%R13,%RAX,1);  (305) 
+0x4153e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	0x60(%RDI,%RAX,1),%YMM14;  (305) 
+0x41544;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%YMM14,%YMM4,%YMM15;  (305) 
+0x41549;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	0x60(%R15,%RAX,1),%YMM14,%YMM1;  (305) 
+0x41550;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%YMM3,%YMM1,%YMM12;  (305) 
+0x41554;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%YMM12,0x60(%R14,%RAX,1);  (305) 
+0x4155b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	0x60(%RDI,%RAX,1),%YMM2,%YMM0;  (305) 
+0x41561;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM15,%YMM15,%YMM11;  (305) 
+0x41566;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM11,%YMM0,%YMM13;  (305) 
+0x4156b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%YMM12,%YMM13,%YMM14;  (305) 
+0x41570;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%YMM14,%YMM15;  (305) 
+0x41575;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%YMM15,0x60(%R13,%RAX,1);  (305) 
+0x4157c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;SUB	$-0x80,%RAX;  (305) 
+0x41580;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	%R9,%RAX;  (305) 
+0x41583;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JNE	4148c <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x29c>;  (305) 
+0x41589;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x4c(%RSP),%EAX;(304) 
+0x4158d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	%ESI,%R9D;(304) 
+0x41590;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;AND	$-0x4,%R9D;(304) 
+0x41594;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	%R9D,%EAX;(304) 
+0x41597;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;TEST	$0x3,%SIL;(304) 
+0x4159b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	4166a <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x47a>;(304) 
+0x415a1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;SUB	%R9D,%ESI;(304) 
+0x415a4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	$0x1,%ESI;(304) 
+0x415a7;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	4161a <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x42a>;(304) 
+0x415a9;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOVSXD	0x4c(%RSP),%RDI;(304) 
+0x415ae;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x58(%RSP),%R14;(304) 
+0x415b3;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%RCX,%RDI,1),%R15;(304) 
+0x415b7;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R14,%RDI,1),%R13;(304) 
+0x415bb;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%R9,%R15;(304) 
+0x415be;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;LEA	(%RDX,%RDI,1),%R14;(304) 
+0x415c2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R9,%R13;(304) 
+0x415c5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;LEA	(%R12,%R15,8),%R15;(304) 
+0x415c9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R9,%R14;(304) 
+0x415cc;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVUPD	(%R15),%XMM1;(304) 
+0x415d1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVPD	%XMM1,%XMM10,%XMM12;(304) 
+0x415d5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	(%RBX,%R14,8),%XMM1,%XMM0;(304) 
+0x415db;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;MOV	0x50(%RSP),%R14;(304) 
+0x415e0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R14,%RDI;(304) 
+0x415e3;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;ADD	%R9,%RDI;(304) 
+0x415e6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULPD	%XMM9,%XMM0,%XMM13;(304) 
+0x415eb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVUPD	%XMM13,(%R11,%RDI,8);(304) 
+0x415f1;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	(%R15),%XMM8,%XMM14;(304) 
+0x415f6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%XMM12,%XMM12,%XMM11;(304) 
+0x415fb;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%XMM11,%XMM14,%XMM15;(304) 
+0x41600;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULPD	%XMM13,%XMM15,%XMM1;(304) 
+0x41605;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTPD	%XMM1,%XMM12;(304) 
+0x41609;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVUPD	%XMM12,(%R10,%R13,8);(304) 
+0x4160f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;TEST	$0x1,%SIL;(304) 
+0x41613;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JE	4166a <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x47a>;(304) 
+0x41615;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;AND	$-0x2,%ESI;(304) 
+0x41618;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;ADD	%ESI,%EAX;(304) 
+0x4161a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;CLTQ;(304) 
+0x4161c;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RCX;(304) 
+0x4161f;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RDX;(304) 
+0x41622;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;LEA	(%R12,%RCX,8),%RSI;(304) 
+0x41626;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x50(%RSP),%R12;(304) 
+0x4162b;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x58(%RSP),%RCX;(304) 
+0x41630;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VMOVSD	(%RSI),%XMM0;(304) 
+0x41634;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%R12;(304) 
+0x41637;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;ADD	%RAX,%RCX;(304) 
+0x4163a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:40;VDIVSD	%XMM0,%XMM7,%XMM13;(304) 
+0x4163e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULSD	(%RBX,%RDX,8),%XMM0,%XMM14;(304) 
+0x41643;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMULSD	%XMM6,%XMM14,%XMM15;(304) 
+0x41647;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:41;VMOVSD	%XMM15,(%R11,%R12,8);(304) 
+0x4164d;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	(%RSI),%XMM5,%XMM1;(304) 
+0x41651;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	%XMM13,%XMM13,%XMM11;(304) 
+0x41656;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	%XMM11,%XMM1,%XMM12;(304) 
+0x4165b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:44;VMULSD	%XMM15,%XMM12,%XMM0;(304) 
+0x41660;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VSQRTSD	%XMM0,%XMM0,%XMM0;(304) 
+0x41664;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;VMOVSD	%XMM0,(%R10,%RCX,8);(304) 
+0x4166a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x48(%RSP),%EDI;(304) 
+0x4166e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;INC	%R8;(304) 
+0x41671;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;LEA	(%R8),%EDX;(304) 
+0x41674;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;CMP	%EDX,0x38(%RSP);(304) 
+0x41678;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;JLE	41698 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x4a8>;(304) 
+0x4167a;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:45;MOV	0x30(%RSP),%ESI;(304) 
+0x4167e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x34(%RSP),%R11D;(304) 
+0x41683;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	0x3c(%RSP),%EAX;(304) 
+0x41687;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;MOV	%R11D,0x4c(%RSP);(304) 
+0x4168c;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;SUB	%EDI,%ESI;(304) 
+0x4168e;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JMP	41308 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x118>;(304) 
+0x41693;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;NOPL	(%RAX,%RAX,1);
+0x41698;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;VZEROUPPER;
+0x4169b;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;LEA	-0x28(%RBP),%RSP;
+0x4169f;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%RBX;
+0x416a0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R12;
+0x416a2;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R13;
+0x416a4;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R14;
+0x416a6;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%R15;
+0x416a8;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;POP	%RBP;
+0x416a9;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;RET;
+0x416aa;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;NOPW	(%RAX,%RAX,1);
+0x416b0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;MOV	0x40(%RSP),%R9;(304) 
+0x416b5;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;JMP	4148c <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x29c>;(304) 
+0x416ba;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:37;NOPW	(%RAX,%RAX,1);
+0x416c0;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;MOV	0x4c(%RSP),%EAX;(304) 
+0x416c4;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;XOR	%R9D,%R9D;(304) 
+0x416c7;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;JMP	415a1 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x3b1>;(304) 
+0x416cc;/home/penda/aoc/CloverLeaf/src/omp/context.h:69;INC	%ESI;
+0x416ce;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;XOR	%EDX,%EDX;
+0x416d0;/home/penda/aoc/CloverLeaf/src/omp/ideal_gas.cpp:39;JMP	41273 <_Z16ideal_gas_kerneliiiiRN6clover8Buffer2DIdEES2_S2_S2_._omp_fn.0+0x83>;
+0x416d5;:0;NOPW	%CS:(%RAX,%RAX,1);

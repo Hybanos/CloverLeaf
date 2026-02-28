@@ -49,7 +49,7 @@ address;source_location;insn;indent
 0x2f32e;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:42;MOV	%ECX,%EAX;
 0x2f330;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:42;XOR	%EDX,%EDX;
 0x2f332;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:42;MOV	0x54(%RSP),%R9D;
-0x2f337;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:43;VMOVSD	0x42b71(%RIP),%XMM1;
+0x2f337;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:43;VMOVSD	0x42b91(%RIP),%XMM1;
 0x2f33f;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:43;DIVL	0x5c(%RSP);
 0x2f343;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:43;MOV	0x18(%RBX),%R10;
 0x2f347;/home/penda/aoc/CloverLeaf/src/omp/accelerate.cpp:43;MOV	0x10(%RBX),%R11;

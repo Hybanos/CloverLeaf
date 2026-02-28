@@ -97,7 +97,7 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input_ ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_771" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_787" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
 <table class="_fixed_table _no_auto_sorting" style="width:100%;"><tr><th>min</th><th>med</th><th>avg</th><th>max</th>
@@ -124,7 +124,7 @@ addLoadEvent(function(){
 <td id="_stats_cov_p9"></td>
 <td id="_stats_cov_p10"></td>
 </tr></table><hr><hr>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_772" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_788" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
 <table class="_fixed_table _no_auto_sorting" style="width:100%;"><tr><th>min</th><th>med</th><th>avg</th><th>max</th>
@@ -155,15 +155,15 @@ addLoadEvent(function(){
 function set_ldbal_input_ () {
   var selector_run  = document.getElementById ("ldbal_select_run_");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_771").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_771").getBoundingClientRect().width);
-  document.getElementById("chart_cat_772").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_772").getBoundingClientRect().width);
+  document.getElementById("chart_cat_787").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_787").getBoundingClientRect().width);
+  document.getElementById("chart_cat_788").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_788").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
 $(document).ready(function(){
   var ordinals = ['0','1','2','3'];
-  var data = [{value:2.484254360199,offset:0, i:0,color:"#333399"},{value:2.5216951370239,offset:0, i:1,color:"#333399"},{value:2.4859855175018,offset:0, i:2,color:"#333399"},{value:2.4269156455994,offset:0, i:3,color:"#333399"}];
+  var data = [{value:2.7248187065125,offset:0, i:0,color:"#333399"},{value:2.6688070297241,offset:0, i:1,color:"#333399"},{value:2.6217503547668,offset:0, i:2,color:"#333399"},{value:2.9848012924194,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -173,7 +173,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_771')
+  const svg = d3.select('#chart_cat_787')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -230,13 +230,13 @@ $(document).ready(function(){
   let tooltip = d3.select("body").append("div").attr("class", "D3tooltip");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_771')
+    .attr('id', 'zoom_chart_787')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i) {return 'zoom_chart_771_'+i;})
+    .attr('id', function (d, i) {return 'zoom_chart_787_'+i;})
     .attr('x',  function (d, i) {return xScale(d.i) - xBand.bandwidth()*0.9/2})
     .attr('y',  function (d, i) {return yScale (d.value + d.offset)})
     .attr('width', xBand.bandwidth()*0.9)
@@ -281,29 +281,29 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_771_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54935");});
-$("#zoom_chart_771_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54946");});
-$("#zoom_chart_771_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54947");});
-$("#zoom_chart_771_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54948");});
-    document.getElementById ("_stats_cov_min").innerText = "2.43";
-    document.getElementById ("_stats_cov_med").innerText = "2.49";
-    document.getElementById ("_stats_cov_avg").innerText = "2.48";
-    document.getElementById ("_stats_cov_max").innerText = "2.52";
-    document.getElementById ("_stats_cov_p1").innerText = "2.43";
-    document.getElementById ("_stats_cov_p2").innerText = "2.43";
-    document.getElementById ("_stats_cov_p3").innerText = "2.43";
-    document.getElementById ("_stats_cov_p4").innerText = "2.43";
-    document.getElementById ("_stats_cov_p5").innerText = "2.48";
-    document.getElementById ("_stats_cov_p6").innerText = "2.48";
-    document.getElementById ("_stats_cov_p7").innerText = "2.48";
-    document.getElementById ("_stats_cov_p8").innerText = "2.49";
-    document.getElementById ("_stats_cov_p9").innerText = "2.49";
-    document.getElementById ("_stats_cov_p10").innerText = "2.52";
+$("#zoom_chart_787_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59628");});
+$("#zoom_chart_787_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59639");});
+$("#zoom_chart_787_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59640");});
+$("#zoom_chart_787_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59641");});
+    document.getElementById ("_stats_cov_min").innerText = "2.62";
+    document.getElementById ("_stats_cov_med").innerText = "2.70";
+    document.getElementById ("_stats_cov_avg").innerText = "2.75";
+    document.getElementById ("_stats_cov_max").innerText = "2.98";
+    document.getElementById ("_stats_cov_p1").innerText = "2.62";
+    document.getElementById ("_stats_cov_p2").innerText = "2.62";
+    document.getElementById ("_stats_cov_p3").innerText = "2.62";
+    document.getElementById ("_stats_cov_p4").innerText = "2.62";
+    document.getElementById ("_stats_cov_p5").innerText = "2.67";
+    document.getElementById ("_stats_cov_p6").innerText = "2.67";
+    document.getElementById ("_stats_cov_p7").innerText = "2.67";
+    document.getElementById ("_stats_cov_p8").innerText = "2.72";
+    document.getElementById ("_stats_cov_p9").innerText = "2.72";
+    document.getElementById ("_stats_cov_p10").innerText = "2.98";
   }
   if (selector_run.value  == "1") {
 $(document).ready(function(){
   var ordinals = ['0','1','2','3'];
-  var data = [{value:0.62999993562698,offset:0, i:0,color:"#333399"},{value:0.63999998569489,offset:0, i:1,color:"#333399"},{value:0.62000000476837,offset:0, i:2,color:"#333399"},{value:0.61000001430511,offset:0, i:3,color:"#333399"}];
+  var data = [{value:0.69999998807907,offset:0, i:0,color:"#333399"},{value:0.6700000166893,offset:0, i:1,color:"#333399"},{value:0.66500002145767,offset:0, i:2,color:"#333399"},{value:0.74500000476837,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -313,7 +313,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_772')
+  const svg = d3.select('#chart_cat_788')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -370,13 +370,13 @@ $(document).ready(function(){
   let tooltip = d3.select("body").append("div").attr("class", "D3tooltip");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_772')
+    .attr('id', 'zoom_chart_788')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i) {return 'zoom_chart_772_'+i;})
+    .attr('id', function (d, i) {return 'zoom_chart_788_'+i;})
     .attr('x',  function (d, i) {return xScale(d.i) - xBand.bandwidth()*0.9/2})
     .attr('y',  function (d, i) {return yScale (d.value + d.offset)})
     .attr('width', xBand.bandwidth()*0.9)
@@ -421,24 +421,24 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_772_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54935");});
-$("#zoom_chart_772_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54946");});
-$("#zoom_chart_772_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54947");});
-$("#zoom_chart_772_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54948");});
-    document.getElementById ("_stats_tps_min").innerText = "0.61";
-    document.getElementById ("_stats_tps_med").innerText = "0.62";
-    document.getElementById ("_stats_tps_avg").innerText = "0.62";
-    document.getElementById ("_stats_tps_max").innerText = "0.64";
-    document.getElementById ("_stats_tps_p1").innerText = "0.61";
-    document.getElementById ("_stats_tps_p2").innerText = "0.61";
-    document.getElementById ("_stats_tps_p3").innerText = "0.61";
-    document.getElementById ("_stats_tps_p4").innerText = "0.61";
-    document.getElementById ("_stats_tps_p5").innerText = "0.62";
-    document.getElementById ("_stats_tps_p6").innerText = "0.62";
-    document.getElementById ("_stats_tps_p7").innerText = "0.62";
-    document.getElementById ("_stats_tps_p8").innerText = "0.63";
-    document.getElementById ("_stats_tps_p9").innerText = "0.63";
-    document.getElementById ("_stats_tps_p10").innerText = "0.64";
+$("#zoom_chart_788_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59628");});
+$("#zoom_chart_788_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59639");});
+$("#zoom_chart_788_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59640");});
+$("#zoom_chart_788_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59641");});
+    document.getElementById ("_stats_tps_min").innerText = "0.67";
+    document.getElementById ("_stats_tps_med").innerText = "0.69";
+    document.getElementById ("_stats_tps_avg").innerText = "0.70";
+    document.getElementById ("_stats_tps_max").innerText = "0.75";
+    document.getElementById ("_stats_tps_p1").innerText = "0.67";
+    document.getElementById ("_stats_tps_p2").innerText = "0.67";
+    document.getElementById ("_stats_tps_p3").innerText = "0.67";
+    document.getElementById ("_stats_tps_p4").innerText = "0.67";
+    document.getElementById ("_stats_tps_p5").innerText = "0.67";
+    document.getElementById ("_stats_tps_p6").innerText = "0.67";
+    document.getElementById ("_stats_tps_p7").innerText = "0.67";
+    document.getElementById ("_stats_tps_p8").innerText = "0.70";
+    document.getElementById ("_stats_tps_p9").innerText = "0.70";
+    document.getElementById ("_stats_tps_p10").innerText = "0.75";
   }
 }
 function set_previous_ldbal_input_ () {
@@ -473,7 +473,7 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input_sorted ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_775" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_791" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
 <table class="_fixed_table _no_auto_sorting" style="width:100%;"><tr><th>min</th><th>med</th><th>avg</th><th>max</th>
@@ -500,7 +500,7 @@ addLoadEvent(function(){
 <td id="sorted_stats_cov_p9"></td>
 <td id="sorted_stats_cov_p10"></td>
 </tr></table><hr><hr>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_776" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_792" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
 <table class="_fixed_table _no_auto_sorting" style="width:100%;"><tr><th>min</th><th>med</th><th>avg</th><th>max</th>
@@ -531,15 +531,15 @@ addLoadEvent(function(){
 function set_ldbal_input_sorted () {
   var selector_run  = document.getElementById ("ldbal_select_run_sorted");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_775").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_775").getBoundingClientRect().width);
-  document.getElementById("chart_cat_776").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_776").getBoundingClientRect().width);
+  document.getElementById("chart_cat_791").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_791").getBoundingClientRect().width);
+  document.getElementById("chart_cat_792").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_792").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['1','2','0','3'];
-  var data = [{value:2.5216951370239,offset:0, i:0,color:"#333399"},{value:2.4859855175018,offset:0, i:1,color:"#333399"},{value:2.484254360199,offset:0, i:2,color:"#333399"},{value:2.4269156455994,offset:0, i:3,color:"#333399"}];
+  var ordinals = ['3','0','1','2'];
+  var data = [{value:2.9848012924194,offset:0, i:0,color:"#333399"},{value:2.7248187065125,offset:0, i:1,color:"#333399"},{value:2.6688070297241,offset:0, i:2,color:"#333399"},{value:2.6217503547668,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -549,7 +549,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_775')
+  const svg = d3.select('#chart_cat_791')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -606,13 +606,13 @@ $(document).ready(function(){
   let tooltip = d3.select("body").append("div").attr("class", "D3tooltip");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_775')
+    .attr('id', 'zoom_chart_791')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i) {return 'zoom_chart_775_'+i;})
+    .attr('id', function (d, i) {return 'zoom_chart_791_'+i;})
     .attr('x',  function (d, i) {return xScale(d.i) - xBand.bandwidth()*0.9/2})
     .attr('y',  function (d, i) {return yScale (d.value + d.offset)})
     .attr('width', xBand.bandwidth()*0.9)
@@ -657,29 +657,29 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_775_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54946");});
-$("#zoom_chart_775_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54947");});
-$("#zoom_chart_775_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54935");});
-$("#zoom_chart_775_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54948");});
-    document.getElementById ("sorted_stats_cov_min").innerText = "2.43";
-    document.getElementById ("sorted_stats_cov_med").innerText = "2.49";
-    document.getElementById ("sorted_stats_cov_avg").innerText = "2.48";
-    document.getElementById ("sorted_stats_cov_max").innerText = "2.52";
-    document.getElementById ("sorted_stats_cov_p1").innerText = "2.43";
-    document.getElementById ("sorted_stats_cov_p2").innerText = "2.43";
-    document.getElementById ("sorted_stats_cov_p3").innerText = "2.43";
-    document.getElementById ("sorted_stats_cov_p4").innerText = "2.43";
-    document.getElementById ("sorted_stats_cov_p5").innerText = "2.48";
-    document.getElementById ("sorted_stats_cov_p6").innerText = "2.48";
-    document.getElementById ("sorted_stats_cov_p7").innerText = "2.48";
-    document.getElementById ("sorted_stats_cov_p8").innerText = "2.49";
-    document.getElementById ("sorted_stats_cov_p9").innerText = "2.49";
-    document.getElementById ("sorted_stats_cov_p10").innerText = "2.52";
+$("#zoom_chart_791_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59641");});
+$("#zoom_chart_791_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59628");});
+$("#zoom_chart_791_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59639");});
+$("#zoom_chart_791_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59640");});
+    document.getElementById ("sorted_stats_cov_min").innerText = "2.62";
+    document.getElementById ("sorted_stats_cov_med").innerText = "2.70";
+    document.getElementById ("sorted_stats_cov_avg").innerText = "2.75";
+    document.getElementById ("sorted_stats_cov_max").innerText = "2.98";
+    document.getElementById ("sorted_stats_cov_p1").innerText = "2.62";
+    document.getElementById ("sorted_stats_cov_p2").innerText = "2.62";
+    document.getElementById ("sorted_stats_cov_p3").innerText = "2.62";
+    document.getElementById ("sorted_stats_cov_p4").innerText = "2.62";
+    document.getElementById ("sorted_stats_cov_p5").innerText = "2.67";
+    document.getElementById ("sorted_stats_cov_p6").innerText = "2.67";
+    document.getElementById ("sorted_stats_cov_p7").innerText = "2.67";
+    document.getElementById ("sorted_stats_cov_p8").innerText = "2.72";
+    document.getElementById ("sorted_stats_cov_p9").innerText = "2.72";
+    document.getElementById ("sorted_stats_cov_p10").innerText = "2.98";
   }
   if (selector_run.value  == "1") {
 $(document).ready(function(){
-  var ordinals = ['1','0','2','3'];
-  var data = [{value:0.63999998569489,offset:0, i:0,color:"#333399"},{value:0.62999993562698,offset:0, i:1,color:"#333399"},{value:0.62000000476837,offset:0, i:2,color:"#333399"},{value:0.61000001430511,offset:0, i:3,color:"#333399"}];
+  var ordinals = ['3','0','1','2'];
+  var data = [{value:0.74500000476837,offset:0, i:0,color:"#333399"},{value:0.69999998807907,offset:0, i:1,color:"#333399"},{value:0.6700000166893,offset:0, i:2,color:"#333399"},{value:0.66500002145767,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -689,7 +689,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_776')
+  const svg = d3.select('#chart_cat_792')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -746,13 +746,13 @@ $(document).ready(function(){
   let tooltip = d3.select("body").append("div").attr("class", "D3tooltip");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_776')
+    .attr('id', 'zoom_chart_792')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i) {return 'zoom_chart_776_'+i;})
+    .attr('id', function (d, i) {return 'zoom_chart_792_'+i;})
     .attr('x',  function (d, i) {return xScale(d.i) - xBand.bandwidth()*0.9/2})
     .attr('y',  function (d, i) {return yScale (d.value + d.offset)})
     .attr('width', xBand.bandwidth()*0.9)
@@ -797,24 +797,24 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_776_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54946");});
-$("#zoom_chart_776_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54935");});
-$("#zoom_chart_776_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54947");});
-$("#zoom_chart_776_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54948");});
-    document.getElementById ("sorted_stats_tps_min").innerText = "0.61";
-    document.getElementById ("sorted_stats_tps_med").innerText = "0.62";
-    document.getElementById ("sorted_stats_tps_avg").innerText = "0.62";
-    document.getElementById ("sorted_stats_tps_max").innerText = "0.64";
-    document.getElementById ("sorted_stats_tps_p1").innerText = "0.61";
-    document.getElementById ("sorted_stats_tps_p2").innerText = "0.61";
-    document.getElementById ("sorted_stats_tps_p3").innerText = "0.61";
-    document.getElementById ("sorted_stats_tps_p4").innerText = "0.61";
-    document.getElementById ("sorted_stats_tps_p5").innerText = "0.62";
-    document.getElementById ("sorted_stats_tps_p6").innerText = "0.62";
-    document.getElementById ("sorted_stats_tps_p7").innerText = "0.62";
-    document.getElementById ("sorted_stats_tps_p8").innerText = "0.63";
-    document.getElementById ("sorted_stats_tps_p9").innerText = "0.63";
-    document.getElementById ("sorted_stats_tps_p10").innerText = "0.64";
+$("#zoom_chart_792_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59641");});
+$("#zoom_chart_792_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59628");});
+$("#zoom_chart_792_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59639");});
+$("#zoom_chart_792_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59640");});
+    document.getElementById ("sorted_stats_tps_min").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_med").innerText = "0.69";
+    document.getElementById ("sorted_stats_tps_avg").innerText = "0.70";
+    document.getElementById ("sorted_stats_tps_max").innerText = "0.75";
+    document.getElementById ("sorted_stats_tps_p1").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p2").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p3").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p4").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p5").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p6").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p7").innerText = "0.67";
+    document.getElementById ("sorted_stats_tps_p8").innerText = "0.70";
+    document.getElementById ("sorted_stats_tps_p9").innerText = "0.70";
+    document.getElementById ("sorted_stats_tps_p10").innerText = "0.75";
   }
 }
 function set_previous_ldbal_input_sorted () {
@@ -849,7 +849,7 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input_all ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_779" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_795" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
 <table class="_fixed_table _no_auto_sorting" style="width:100%;"><tr><th>min</th><th>med</th><th>avg</th><th>max</th>
@@ -876,7 +876,7 @@ addLoadEvent(function(){
 <td id="all_stats_cov_p9"></td>
 <td id="all_stats_cov_p10"></td>
 </tr></table><hr><hr>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_780" style="height:500px" ></div><div style="text-align:center;"></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_796" style="height:500px" ></div><div style="text-align:center;"></div></div>
 <script class="code">
 </script>
 <table class="_fixed_table _no_auto_sorting" style="width:100%;"><tr><th>min</th><th>med</th><th>avg</th><th>max</th>
@@ -907,15 +907,15 @@ addLoadEvent(function(){
 function set_ldbal_input_all () {
   var selector_run  = document.getElementById ("ldbal_select_run_all");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_779").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_779").getBoundingClientRect().width);
-  document.getElementById("chart_cat_780").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_780").getBoundingClientRect().width);
+  document.getElementById("chart_cat_795").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_795").getBoundingClientRect().width);
+  document.getElementById("chart_cat_796").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_796").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
 $(document).ready(function(){
   var ordinals = ['0','1','2','3'];
-  var data = [{value:2.484254360199,offset:0, i:0,color:"#333399"},{value:2.5216951370239,offset:0, i:1,color:"#333399"},{value:2.4859855175018,offset:0, i:2,color:"#333399"},{value:2.4269156455994,offset:0, i:3,color:"#333399"}];
+  var data = [{value:2.7248187065125,offset:0, i:0,color:"#333399"},{value:2.6688070297241,offset:0, i:1,color:"#333399"},{value:2.6217503547668,offset:0, i:2,color:"#333399"},{value:2.9848012924194,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -925,7 +925,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_779')
+  const svg = d3.select('#chart_cat_795')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -982,13 +982,13 @@ $(document).ready(function(){
   let tooltip = d3.select("body").append("div").attr("class", "D3tooltip");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_779')
+    .attr('id', 'zoom_chart_795')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i) {return 'zoom_chart_779_'+i;})
+    .attr('id', function (d, i) {return 'zoom_chart_795_'+i;})
     .attr('x',  function (d, i) {return xScale(d.i) - xBand.bandwidth()*0.9/2})
     .attr('y',  function (d, i) {return yScale (d.value + d.offset)})
     .attr('width', xBand.bandwidth()*0.9)
@@ -1033,29 +1033,29 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_779_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54935");});
-$("#zoom_chart_779_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54946");});
-$("#zoom_chart_779_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54947");});
-$("#zoom_chart_779_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54948");});
-    document.getElementById ("all_stats_cov_min").innerText = "2.43";
-    document.getElementById ("all_stats_cov_med").innerText = "2.49";
-    document.getElementById ("all_stats_cov_avg").innerText = "2.48";
-    document.getElementById ("all_stats_cov_max").innerText = "2.52";
-    document.getElementById ("all_stats_cov_p1").innerText = "2.43";
-    document.getElementById ("all_stats_cov_p2").innerText = "2.43";
-    document.getElementById ("all_stats_cov_p3").innerText = "2.43";
-    document.getElementById ("all_stats_cov_p4").innerText = "2.43";
-    document.getElementById ("all_stats_cov_p5").innerText = "2.48";
-    document.getElementById ("all_stats_cov_p6").innerText = "2.48";
-    document.getElementById ("all_stats_cov_p7").innerText = "2.48";
-    document.getElementById ("all_stats_cov_p8").innerText = "2.49";
-    document.getElementById ("all_stats_cov_p9").innerText = "2.49";
-    document.getElementById ("all_stats_cov_p10").innerText = "2.52";
+$("#zoom_chart_795_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59628");});
+$("#zoom_chart_795_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59639");});
+$("#zoom_chart_795_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59640");});
+$("#zoom_chart_795_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59641");});
+    document.getElementById ("all_stats_cov_min").innerText = "2.62";
+    document.getElementById ("all_stats_cov_med").innerText = "2.70";
+    document.getElementById ("all_stats_cov_avg").innerText = "2.75";
+    document.getElementById ("all_stats_cov_max").innerText = "2.98";
+    document.getElementById ("all_stats_cov_p1").innerText = "2.62";
+    document.getElementById ("all_stats_cov_p2").innerText = "2.62";
+    document.getElementById ("all_stats_cov_p3").innerText = "2.62";
+    document.getElementById ("all_stats_cov_p4").innerText = "2.62";
+    document.getElementById ("all_stats_cov_p5").innerText = "2.67";
+    document.getElementById ("all_stats_cov_p6").innerText = "2.67";
+    document.getElementById ("all_stats_cov_p7").innerText = "2.67";
+    document.getElementById ("all_stats_cov_p8").innerText = "2.72";
+    document.getElementById ("all_stats_cov_p9").innerText = "2.72";
+    document.getElementById ("all_stats_cov_p10").innerText = "2.98";
   }
   if (selector_run.value  == "1") {
 $(document).ready(function(){
   var ordinals = ['0','1','2','3'];
-  var data = [{value:0.62999993562698,offset:0, i:0,color:"#333399"},{value:0.63999998569489,offset:0, i:1,color:"#333399"},{value:0.62000000476837,offset:0, i:2,color:"#333399"},{value:0.61000001430511,offset:0, i:3,color:"#333399"}];
+  var data = [{value:0.69999998807907,offset:0, i:0,color:"#333399"},{value:0.6700000166893,offset:0, i:1,color:"#333399"},{value:0.66500002145767,offset:0, i:2,color:"#333399"},{value:0.74500000476837,offset:0, i:3,color:"#333399"}];
   var widthgl  = _width;
   var widthin  = _width;
   var heightgl = 480;
@@ -1065,7 +1065,7 @@ $(document).ready(function(){
   height = heightgl - margin.top - margin.bottom,
   radius = (Math.min(width, height) / 2) - 10,
   node;
-  const svg = d3.select('#chart_cat_780')
+  const svg = d3.select('#chart_cat_796')
       .append('svg')
       .attr('width', widthin)
       .attr('height', heightin)
@@ -1122,13 +1122,13 @@ $(document).ready(function(){
   let tooltip = d3.select("body").append("div").attr("class", "D3tooltip");
   let bars = svg.append('g')
     .attr('clip-path','url(#my-clip-path)')
-    .attr('id', 'zoom_chart_780')
+    .attr('id', 'zoom_chart_796')
     .selectAll('.bar')
     .data(data)
     .enter()
     .append('rect')
     .attr('class', 'bar')
-    .attr('id', function (d, i) {return 'zoom_chart_780_'+i;})
+    .attr('id', function (d, i) {return 'zoom_chart_796_'+i;})
     .attr('x',  function (d, i) {return xScale(d.i) - xBand.bandwidth()*0.9/2})
     .attr('y',  function (d, i) {return yScale (d.value + d.offset)})
     .attr('width', xBand.bandwidth()*0.9)
@@ -1173,24 +1173,24 @@ $(document).ready(function(){
       bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
   }
 });
-$("#zoom_chart_780_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54935");});
-$("#zoom_chart_780_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54946");});
-$("#zoom_chart_780_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54947");});
-$("#zoom_chart_780_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_54935_54948");});
-    document.getElementById ("all_stats_tps_min").innerText = "0.61";
-    document.getElementById ("all_stats_tps_med").innerText = "0.62";
-    document.getElementById ("all_stats_tps_avg").innerText = "0.62";
-    document.getElementById ("all_stats_tps_max").innerText = "0.64";
-    document.getElementById ("all_stats_tps_p1").innerText = "0.61";
-    document.getElementById ("all_stats_tps_p2").innerText = "0.61";
-    document.getElementById ("all_stats_tps_p3").innerText = "0.61";
-    document.getElementById ("all_stats_tps_p4").innerText = "0.61";
-    document.getElementById ("all_stats_tps_p5").innerText = "0.62";
-    document.getElementById ("all_stats_tps_p6").innerText = "0.62";
-    document.getElementById ("all_stats_tps_p7").innerText = "0.62";
-    document.getElementById ("all_stats_tps_p8").innerText = "0.63";
-    document.getElementById ("all_stats_tps_p9").innerText = "0.63";
-    document.getElementById ("all_stats_tps_p10").innerText = "0.64";
+$("#zoom_chart_796_0").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59628");});
+$("#zoom_chart_796_1").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59639");});
+$("#zoom_chart_796_2").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59640");});
+$("#zoom_chart_796_3").click( function () {window.open("../topo/redirect.html?thread=0_penda-Latitude-7480_59628_59641");});
+    document.getElementById ("all_stats_tps_min").innerText = "0.67";
+    document.getElementById ("all_stats_tps_med").innerText = "0.69";
+    document.getElementById ("all_stats_tps_avg").innerText = "0.70";
+    document.getElementById ("all_stats_tps_max").innerText = "0.75";
+    document.getElementById ("all_stats_tps_p1").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p2").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p3").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p4").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p5").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p6").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p7").innerText = "0.67";
+    document.getElementById ("all_stats_tps_p8").innerText = "0.70";
+    document.getElementById ("all_stats_tps_p9").innerText = "0.70";
+    document.getElementById ("all_stats_tps_p10").innerText = "0.75";
   }
 }
 function set_previous_ldbal_input_all () {
@@ -1216,17 +1216,17 @@ addLoadEvent(function(){
 <table style="width:100%;"><tr><td style="text-align:center;"><select id="callchains_select_run" size="1" onchange="set_callchains_input ();" autocomplete="off" style="cursor:pointer;">
            <option value="1">Run 1
 </select></td></tr></table>
-<div id="div_callchains_1"><div class="_div_table" ><table id="_tree_table_127" class="_tree_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="0" style="width:20%;"><span></span>Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="1" style="width:30%;"><span></span>Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="2" style="width:30%;"><span></span>Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="3" style="width:20%;"><span></span>Module</th></tr>
-<tr class=" _outer_row"  id="_tr_127_1" ><td id="_tr_127_1-1"  data-_i="1" data-_j="1"  class=" _left" ><span onclick="_click_tree(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BA;</span>74.80<span onclick="_click_expand(this)" class="span_expand">&#43;</span></td><td id="_tr_127_1-2"  data-_i="1" data-_j="2" >omp_fulfill_event</td><td id="_tr_127_1-3"  data-_i="1" data-_j="3"  title="" tooltip_id="4" class=" tooltip-maqao" ></td><td id="_tr_127_1-4"  data-_i="1" data-_j="4"  class=" _centered" >libgomp.so.1.0.0</td></tr>
-<tr class="_tree_hidden _tr_127_1"  id="_tr_127_1_1" ><td id="_tr_127_1_1-1"  data-_i="2" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_1_1-2"  data-_i="2" data-_j="2" >start_thread</td><td id="_tr_127_1_1-3"  data-_i="2" data-_j="3"  title="" tooltip_id="5" class=" tooltip-maqao" ></td><td id="_tr_127_1_1-4"  data-_i="2" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
-<tr class="_tree_hidden _tr_127_1"  id="_tr_127_1_2" ><td id="_tr_127_1_2-1"  data-_i="3" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_1_2-2"  data-_i="3" data-_j="2" >__GI___clone3</td><td id="_tr_127_1_2-3"  data-_i="3" data-_j="3"  title="" tooltip_id="6" class=" tooltip-maqao" ></td><td id="_tr_127_1_2-4"  data-_i="3" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
-<tr class=" _outer_row"  id="_tr_127_2" ><td id="_tr_127_2-1"  data-_i="4" data-_j="1"  class=" _left" ><span onclick="_click_tree(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BA;</span>25.00<span onclick="_click_expand(this)" class="span_expand">&#43;</span></td><td id="_tr_127_2-2"  data-_i="4" data-_j="2" >GOMP_parallel</td><td id="_tr_127_2-3"  data-_i="4" data-_j="3"  title="" tooltip_id="7" class=" tooltip-maqao" ></td><td id="_tr_127_2-4"  data-_i="4" data-_j="4"  class=" _centered" >libgomp.so.1.0.0</td></tr>
-<tr class="_tree_hidden _tr_127_2"  id="_tr_127_2_1" ><td id="_tr_127_2_1-1"  data-_i="5" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_2_1-2"  data-_i="5" data-_j="2" >flux_calc(global_variables&amp;)</td><td id="_tr_127_2_1-3"  data-_i="5" data-_j="3"  title="" tooltip_id="8" class=" tooltip-maqao" >flux_calc.cpp:53</td><td id="_tr_127_2_1-4"  data-_i="5" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
-<tr class="_tree_hidden _tr_127_2"  id="_tr_127_2_2" ><td id="_tr_127_2_2-1"  data-_i="6" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_2_2-2"  data-_i="6" data-_j="2"  title="" tooltip_id="9" class=" tooltip-maqao" >hydro(global_variables&amp;, paral[...]</td><td id="_tr_127_2_2-3"  data-_i="6" data-_j="3"  title="" tooltip_id="10" class=" tooltip-maqao" >basic_string.h:1220</td><td id="_tr_127_2_2-4"  data-_i="6" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
-<tr class="_tree_hidden _tr_127_2"  id="_tr_127_2_3" ><td id="_tr_127_2_3-1"  data-_i="7" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_2_3-2"  data-_i="7" data-_j="2" >main</td><td id="_tr_127_2_3-3"  data-_i="7" data-_j="3"  title="" tooltip_id="11" class=" tooltip-maqao" >allocator.h:184</td><td id="_tr_127_2_3-4"  data-_i="7" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
-<tr class="_tree_hidden _tr_127_2"  id="_tr_127_2_4" ><td id="_tr_127_2_4-1"  data-_i="8" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_2_4-2"  data-_i="8" data-_j="2" >__libc_start_call_main</td><td id="_tr_127_2_4-3"  data-_i="8" data-_j="3"  title="" tooltip_id="12" class=" tooltip-maqao" ></td><td id="_tr_127_2_4-4"  data-_i="8" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
-<tr class="_tree_hidden _tr_127_2"  id="_tr_127_2_5" ><td id="_tr_127_2_5-1"  data-_i="9" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_2_5-2"  data-_i="9" data-_j="2" >__libc_start_main</td><td id="_tr_127_2_5-3"  data-_i="9" data-_j="3"  title="" tooltip_id="13" class=" tooltip-maqao" ></td><td id="_tr_127_2_5-4"  data-_i="9" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
-<tr class="_tree_hidden _tr_127_2"  id="_tr_127_2_6" ><td id="_tr_127_2_6-1"  data-_i="10" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_127_2_6-2"  data-_i="10" data-_j="2" >_start</td><td id="_tr_127_2_6-3"  data-_i="10" data-_j="3"  title="" tooltip_id="14" class=" tooltip-maqao" >allocator.h:184</td><td id="_tr_127_2_6-4"  data-_i="10" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
+<div id="div_callchains_1"><div class="_div_table" ><table id="_tree_table_130" class="_tree_table"><tr><th class="_freezed_row  _left  tooltip-maqao" title="" tooltip_id="0" style="width:20%;"><span></span>Coverage (%)</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="1" style="width:30%;"><span></span>Name</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="2" style="width:30%;"><span></span>Source Location</th><th class="_freezed_row  tooltip-maqao" title="" tooltip_id="3" style="width:20%;"><span></span>Module</th></tr>
+<tr class=" _outer_row"  id="_tr_130_1" ><td id="_tr_130_1-1"  data-_i="1" data-_j="1"  class=" _left" ><span onclick="_click_tree(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BA;</span>74.64<span onclick="_click_expand(this)" class="span_expand">&#43;</span></td><td id="_tr_130_1-2"  data-_i="1" data-_j="2" >omp_fulfill_event</td><td id="_tr_130_1-3"  data-_i="1" data-_j="3"  title="" tooltip_id="4" class=" tooltip-maqao" ></td><td id="_tr_130_1-4"  data-_i="1" data-_j="4"  class=" _centered" >libgomp.so.1.0.0</td></tr>
+<tr class="_tree_hidden _tr_130_1"  id="_tr_130_1_1" ><td id="_tr_130_1_1-1"  data-_i="2" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_1_1-2"  data-_i="2" data-_j="2" >start_thread</td><td id="_tr_130_1_1-3"  data-_i="2" data-_j="3"  title="" tooltip_id="5" class=" tooltip-maqao" ></td><td id="_tr_130_1_1-4"  data-_i="2" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
+<tr class="_tree_hidden _tr_130_1"  id="_tr_130_1_2" ><td id="_tr_130_1_2-1"  data-_i="3" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_1_2-2"  data-_i="3" data-_j="2" >__GI___clone3</td><td id="_tr_130_1_2-3"  data-_i="3" data-_j="3"  title="" tooltip_id="6" class=" tooltip-maqao" ></td><td id="_tr_130_1_2-4"  data-_i="3" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
+<tr class=" _outer_row"  id="_tr_130_2" ><td id="_tr_130_2-1"  data-_i="4" data-_j="1"  class=" _left" ><span onclick="_click_tree(this)" style="margin-right:5px;margin-left:0px;cursor:pointer;" >&#x25BA;</span>24.64<span onclick="_click_expand(this)" class="span_expand">&#43;</span></td><td id="_tr_130_2-2"  data-_i="4" data-_j="2" >GOMP_parallel</td><td id="_tr_130_2-3"  data-_i="4" data-_j="3"  title="" tooltip_id="7" class=" tooltip-maqao" ></td><td id="_tr_130_2-4"  data-_i="4" data-_j="4"  class=" _centered" >libgomp.so.1.0.0</td></tr>
+<tr class="_tree_hidden _tr_130_2"  id="_tr_130_2_1" ><td id="_tr_130_2_1-1"  data-_i="5" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_2_1-2"  data-_i="5" data-_j="2" >flux_calc(global_variables&amp;)</td><td id="_tr_130_2_1-3"  data-_i="5" data-_j="3"  title="" tooltip_id="8" class=" tooltip-maqao" >flux_calc.cpp:53</td><td id="_tr_130_2_1-4"  data-_i="5" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
+<tr class="_tree_hidden _tr_130_2"  id="_tr_130_2_2" ><td id="_tr_130_2_2-1"  data-_i="6" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_2_2-2"  data-_i="6" data-_j="2"  title="" tooltip_id="9" class=" tooltip-maqao" >hydro(global_variables&amp;, paral[...]</td><td id="_tr_130_2_2-3"  data-_i="6" data-_j="3"  title="" tooltip_id="10" class=" tooltip-maqao" >basic_string.h:1220</td><td id="_tr_130_2_2-4"  data-_i="6" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
+<tr class="_tree_hidden _tr_130_2"  id="_tr_130_2_3" ><td id="_tr_130_2_3-1"  data-_i="7" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_2_3-2"  data-_i="7" data-_j="2" >main</td><td id="_tr_130_2_3-3"  data-_i="7" data-_j="3"  title="" tooltip_id="11" class=" tooltip-maqao" >allocator.h:184</td><td id="_tr_130_2_3-4"  data-_i="7" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
+<tr class="_tree_hidden _tr_130_2"  id="_tr_130_2_4" ><td id="_tr_130_2_4-1"  data-_i="8" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_2_4-2"  data-_i="8" data-_j="2" >__libc_start_call_main</td><td id="_tr_130_2_4-3"  data-_i="8" data-_j="3"  title="" tooltip_id="12" class=" tooltip-maqao" ></td><td id="_tr_130_2_4-4"  data-_i="8" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
+<tr class="_tree_hidden _tr_130_2"  id="_tr_130_2_5" ><td id="_tr_130_2_5-1"  data-_i="9" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_2_5-2"  data-_i="9" data-_j="2" >__libc_start_main</td><td id="_tr_130_2_5-3"  data-_i="9" data-_j="3"  title="" tooltip_id="13" class=" tooltip-maqao" ></td><td id="_tr_130_2_5-4"  data-_i="9" data-_j="4"  class=" _centered" >libc.so.6</td></tr>
+<tr class="_tree_hidden _tr_130_2"  id="_tr_130_2_6" ><td id="_tr_130_2_6-1"  data-_i="10" data-_j="1"  class=" _left" ><span style="margin-right:10px;margin-left:18px;" >&#x25CB;</span></td><td id="_tr_130_2_6-2"  data-_i="10" data-_j="2" >_start</td><td id="_tr_130_2_6-3"  data-_i="10" data-_j="3"  title="" tooltip_id="14" class=" tooltip-maqao" >allocator.h:184</td><td id="_tr_130_2_6-4"  data-_i="10" data-_j="4"  class=" _centered" >omp-cloverleaf</td></tr>
 </table></div>
 </div>
 <script>

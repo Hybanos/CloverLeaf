@@ -5,5 +5,5 @@ group_size;pattern;opcodes;offsets;addresses;stride_status;stride;memory_status;
 1;L;VMOVSD,;0,;0x380fd,;Iteration not constant;0;Success;8;8;0;8;0;1;
 1;S;VMOVSD,;0,;0x381a7,;Success;8;Success;8;8;0;8;8;1;
 1;L;VMOVSD,;0,;0x381b9,;Success;8;Success;8;8;0;8;8;1;
-2;LL;VMOVSD,VMOVDDUP,;236912,237058,;0x381f0,0x38146,;RIP based value;0;Success;16;16;0;154;0;1;
+2;LL;VMOVSD,VMOVDDUP,;236944,237090,;0x381f0,0x38146,;RIP based value;0;Success;16;16;0;154;0;1;
 8;LLLLLLLL;MOV,MOVSXD,MOV,MOVSXD,MOV,MOV,MOV,MOV,;24,48,24,44,8,0,32,16,;0x380c8,0x381c9,0x381ce,0x381d6,0x380dd,0x38103,0x3814e,0x381a2,;Success;0;Success;56;48;8;52;0;1;

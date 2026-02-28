@@ -3,9 +3,40 @@
     {
       "loops":
         {
-          "_299":
+          "_298":
             {
               "_300":
+                {
+                  "src_regions":
+                    [
+                      {
+                        "path": "/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp",
+                        "regions":
+                          [
+                            [
+                            117,
+                            123
+                            ]
+                          ]
+                      },
+                      {
+                        "path": "/home/penda/aoc/CloverLeaf/src/omp/context.h",
+                        "regions":
+                          [
+                            [
+                            46,
+                            46
+                            ],
+                            [
+                            69,
+                            69
+                            ]
+                          ]
+                      }
+                    ],
+                  "src": "generate_chunk.cpp:117-123"
+                },
+              "_299":
                 {
                   "src_regions":
                     [
@@ -36,7 +67,7 @@
                     ],
                   "src": "generate_chunk.cpp:105-112"
                 },
-              "_302":
+              "_301":
                 {
                   "src_regions":
                     [
@@ -66,37 +97,6 @@
                       }
                     ],
                   "src": "generate_chunk.cpp:91-98"
-                },
-              "_301":
-                {
-                  "src_regions":
-                    [
-                      {
-                        "path": "/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp",
-                        "regions":
-                          [
-                            [
-                            117,
-                            123
-                            ]
-                          ]
-                      },
-                      {
-                        "path": "/home/penda/aoc/CloverLeaf/src/omp/context.h",
-                        "regions":
-                          [
-                            [
-                            46,
-                            46
-                            ],
-                            [
-                            69,
-                            69
-                            ]
-                          ]
-                      }
-                    ],
-                  "src": "generate_chunk.cpp:117-123"
                 },
               "src_regions":
                 [

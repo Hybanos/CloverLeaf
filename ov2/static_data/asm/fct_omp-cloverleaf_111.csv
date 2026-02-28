@@ -52,7 +52,7 @@ address;source_location;insn;indent
 0x35f0b;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:98;DIVL	0x74(%RSP);
 0x35f0f;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:98;MOV	0x20(%RBX),%R11;
 0x35f13;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:100;MOV	0x8(%RBX),%R14;
-0x35f17;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:98;VMOVSD	0x3bfb1(%RIP),%XMM3;
+0x35f17;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:98;VMOVSD	0x3bfd1(%RIP),%XMM3;
 0x35f1f;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:98;MOV	%R10,0x38(%RSP);
 0x35f24;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:98;MOV	%R11,0x30(%RSP);
 0x35f29;/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp:100;MOV	%R14,0x20(%RSP);

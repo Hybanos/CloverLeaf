@@ -12,7 +12,7 @@ Thread(s) par cœur :                      2
 Cœur(s) par socket :                      2
 Socket(s) :                               1
 Révision :                                3
-multiplication des MHz du/des CPU(s) :    90%
+multiplication des MHz du/des CPU(s) :    93%
 Vitesse maximale du processeur en MHz :   3000,0000
 Vitesse minimale du processeur en MHz :   400,0000
 BogoMIPS :                                4999,90
