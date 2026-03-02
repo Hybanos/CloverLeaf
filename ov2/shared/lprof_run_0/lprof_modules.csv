@@ -1,5 +1,0 @@
-name;time_p;time_s;cpi_ratio;
-/home/penda/aoc/CloverLeaf/ov2/binaries/omp-cloverleaf;78.397895812988;20.140249252319;;
-/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;14.814204216003;3.8057367801666;;
-kernel;5.3501205444336;1.3744343519211;;
-/usr/lib/x86_64-linux-gnu/libc.so.6;1.4388967752457;0.36964944005013;;

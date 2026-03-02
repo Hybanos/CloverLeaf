@@ -1,7 +1,0 @@
-/home/penda/aoc/CloverLeaf/src/omp/generate_chunk.cpp: 77 - 80
---------------------------------------------------------------------------------
-
-77:       field.energy0(i, j) = state_energy[0];
-78:       field.density0(i, j) = state_density[0];
-79:       field.xvel0(i, j) = state_xvel[0];
-80:       field.yvel0(i, j) = state_yvel[0];

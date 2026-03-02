@@ -1,4 +1,0 @@
-/home/penda/aoc/CloverLeaf/src/omp/advec_mom.cpp: 160 - 160
---------------------------------------------------------------------------------
-
-160:           node_flux(i, j) = 0.25 * (mass_flux_y(i - 1, j + 0) + mass_flux_y(i, j) + mass_flux_y(i - 1, j + 1) + mass_flux_y(i + 0, j + 1));

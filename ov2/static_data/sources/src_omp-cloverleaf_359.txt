@@ -1,5 +1,0 @@
-/home/penda/aoc/CloverLeaf/src/omp/reset_field.cpp: 47 - 48
---------------------------------------------------------------------------------
-
-47:       xvel0(i, j) = xvel1(i, j);
-48:       yvel0(i, j) = yvel1(i, j);
